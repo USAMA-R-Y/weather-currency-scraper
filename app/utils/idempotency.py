@@ -25,7 +25,7 @@ def idempotent_once(name: str, idempotency_key: str):
     Raises:
         Exception: If job has already completed successfully
     """
-    from app.modules.jobs.model import TaskRun
+    from app.modules.jobs.models import TaskRun
     
     db: Session = SessionLocal()
     task_run = None
@@ -101,7 +101,7 @@ def check_idempotency(name: str, idempotency_key: str) -> bool:
     Returns:
         True if task has been completed, False otherwise
     """
-    from app.modules.jobs.model import TaskRun
+    from app.modules.jobs.models import TaskRun
     
     db: Session = SessionLocal()
     try:
