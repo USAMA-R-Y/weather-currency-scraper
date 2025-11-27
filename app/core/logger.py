@@ -18,8 +18,8 @@ def setup_logging(log_level: str = "INFO") -> logging.Logger:
     log_dir = Path("data/logs")
     log_dir.mkdir(parents=True, exist_ok=True)
     
-    # Create log filename with timestamp
-    log_filename = log_dir / f"app_{datetime.now().strftime('%Y%m%d')}.log"
+    # Create log filename with full timestamp for each run
+    log_filename = log_dir / f"app_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
     
     # Configure logging format
     log_format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -33,8 +33,8 @@ def setup_logging(log_level: str = "INFO") -> logging.Logger:
         handlers=[
             # Console handler (stdout)
             logging.StreamHandler(sys.stdout),
-            # File handler (rotating daily)
-            logging.FileHandler(log_filename, mode="a", encoding="utf-8")
+            # File handler (separate file for each run)
+            logging.FileHandler(log_filename, mode="w", encoding="utf-8")
         ]
     )
     

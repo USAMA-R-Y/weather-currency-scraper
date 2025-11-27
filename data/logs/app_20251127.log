@@ -1,0 +1,106 @@
+2025-11-27 19:17:49 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:17:49 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:17:49 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:17:50 - app.core.logger - ERROR - Failed to initialize scheduler: cannot import name 'init_scheduler' from 'jobs.scheduler' (/Users/macbookpro/development/p-p/automated-weather-tracker/jobs/scheduler.py)
+2025-11-27 19:18:06 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 19:18:07 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:18:07 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:18:07 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:18:07 - jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:18:07 - jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 19:18:07 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 19:18:07 - jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 19:18:07 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 19:18:19 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 19:18:25 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:18:25 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:18:25 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:18:25 - jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:18:25 - jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 19:18:25 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 19:18:25 - jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 19:18:25 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 19:27:08 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:27:08 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:27:08 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:27:08 - jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:27:08 - jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 19:27:08 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 19:27:08 - jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 19:27:08 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 19:34:41 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 19:34:42 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:34:42 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:34:42 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:34:42 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:34:42 - app.core.logger - ERROR - Failed to initialize scheduler: No module named 'jobs'
+2025-11-27 19:34:44 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 19:34:44 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:34:44 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:34:44 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:34:44 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:34:44 - app.core.logger - ERROR - Failed to initialize scheduler: No module named 'jobs'
+2025-11-27 19:34:46 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 19:34:46 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:34:46 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:34:46 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:34:47 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:34:47 - app.core.logger - ERROR - Failed to initialize scheduler: No module named 'jobs'
+2025-11-27 19:34:48 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 19:34:48 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:34:48 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:34:48 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:34:49 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:34:49 - app.jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 19:34:49 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 19:34:49 - app.jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 19:34:49 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 19:35:15 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 19:35:15 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:35:15 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:35:15 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:35:16 - app.core.logger - ERROR - Failed to initialize scheduler: cannot import name 'init_scheduler' from 'app.jobs.scheduler' (/Users/macbookpro/development/p-p/automated-weather-tracker/app/jobs/scheduler.py)
+2025-11-27 19:35:18 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 19:35:19 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:35:19 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:35:19 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:35:19 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:35:19 - app.jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 19:35:19 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 19:35:19 - app.jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 19:35:19 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 19:35:54 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:35:54 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:35:54 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:35:54 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:35:54 - app.jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 19:35:55 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 19:35:55 - app.jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 19:35:55 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 19:37:52 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:37:52 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 19:37:52 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 19:37:53 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 19:37:53 - app.jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 19:37:53 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 19:37:53 - app.jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 19:37:53 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 19:38:25 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 20:15:14 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 20:15:14 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 20:15:15 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 20:15:15 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 20:15:15 - app.jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 20:15:15 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 20:15:15 - app.jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 20:15:15 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 20:15:18 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-27 23:59:16 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 23:59:16 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251127.log
+2025-11-27 23:59:16 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-27 23:59:16 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-27 23:59:16 - app.jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-27 23:59:16 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-27 23:59:16 - app.jobs.scheduler - INFO - Scheduler started successfully
+2025-11-27 23:59:16 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-27 23:59:45 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
