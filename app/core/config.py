@@ -26,6 +26,9 @@ class Settings(BaseSettings):
     
     # Security
     ADMIN_TOKEN: Optional[str] = None
+    SECRET_KEY: str = "your-secret-key-here-change-in-production"  # Change this in production!
+    ALGORITHM: str = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     
     @property
     def effective_database_url(self) -> str:
