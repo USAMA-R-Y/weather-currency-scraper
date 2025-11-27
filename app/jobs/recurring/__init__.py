@@ -1,4 +1,5 @@
 from app.jobs.registry import RecurringJobSpec
+
 from app.jobs.recurring.scrape_countries_cities import scrape_countries_cities_main
 import random
 
