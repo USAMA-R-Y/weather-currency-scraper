@@ -1,4 +1,4 @@
-from jobs.registry import RecurringJobSpec
+from app.jobs.registry import RecurringJobSpec
 
 # List of all recurring jobs
 RECURRING_JOBS = [

@@ -50,8 +50,8 @@ def register_jobs(scheduler: BackgroundScheduler) -> None:
     Args:
         scheduler: APScheduler instance
     """
-    from jobs.one_off import ONE_OFF_JOBS
-    from jobs.recurring import RECURRING_JOBS
+    from app.jobs.one_off import ONE_OFF_JOBS
+    from app.jobs.recurring import RECURRING_JOBS
     
     # Register one-off jobs
     for job_spec in ONE_OFF_JOBS:
@@ -108,37 +108,4 @@ def shutdown_scheduler(scheduler: BackgroundScheduler) -> None:
     scheduler.shutdown(wait=True)
     logger.info("Scheduler shutdown complete")
 
-
-# Global scheduler instance
-_scheduler = None
-
-
-def init_scheduler() -> BackgroundScheduler:
-    """
-    Initialize and start the scheduler with all registered jobs.
-    
-    Returns:
-        Running scheduler instance
-    """
-    global _scheduler
-    
-    if _scheduler is not None:
-        logger.warning("Scheduler already initialized")
-        return _scheduler
-    
-    _scheduler = create_scheduler()
-    register_jobs(_scheduler)
-    start_scheduler(_scheduler)
-    
-    return _scheduler
-
-
-def get_scheduler() -> BackgroundScheduler:
-    """
-    Get the global scheduler instance.
-    
-    Returns:
-        Scheduler instance or None if not initialized
-    """
-    return _scheduler
 
