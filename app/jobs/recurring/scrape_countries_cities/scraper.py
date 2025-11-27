@@ -204,6 +204,9 @@ def scrape_cities_for_country(page, country_url: str, country_name: str) -> List
     print(f"Processing {len(all_city_letter_links)} city letter links")
     
     for link_index, city_letter_url in enumerate(all_city_letter_links, 1):
+        # Delay between navigations
+        if link_index > 1:
+            time.sleep(random.uniform(1, 3))
         
         page.goto(city_letter_url, wait_until="domcontentloaded")
         time.sleep(random.uniform(2, 4))
