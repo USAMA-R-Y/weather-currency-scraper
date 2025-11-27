@@ -1,4 +1,4 @@
-from jobs.registry import OneOffJobSpec
+from app.jobs.registry import OneOffJobSpec
 
 # List of all one-off jobs
 # Add one-off jobs here as needed

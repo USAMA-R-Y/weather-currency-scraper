@@ -60,8 +60,10 @@ async def startup_event():
     
     # Initialize scheduler
     try:
-        from jobs.scheduler import init_scheduler
-        init_scheduler()
+        from app.jobs.scheduler import create_scheduler, register_jobs, start_scheduler
+        scheduler = create_scheduler()
+        register_jobs(scheduler)
+        start_scheduler(scheduler)
         logger.info("Scheduler initialized successfully")
     except Exception as e:
         logger.error(f"Failed to initialize scheduler: {e}")
