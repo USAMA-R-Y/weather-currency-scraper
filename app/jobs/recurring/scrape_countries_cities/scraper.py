@@ -82,13 +82,19 @@ def scrape_countries(page) -> List[Dict[str, str]]:
         
         time.sleep(random.uniform(2, 4))
         
+            
+        # Get all matching divs
+        all_divs = page.locator(f"xpath={divs_xpath}").all()
         print(f"Found {len(all_divs)} country sections")
         
         for div_index, div in enumerate(all_divs, 1):
             
+            ul_xpath = ".//ul"
             uls = div.locator(f"xpath={ul_xpath}").all()
             
             for ul_index, ul in enumerate(uls, 1):
+                # Find all li elements within this ul
+                li_xpath = ".//li"
                 lis = ul.locator(f"xpath={li_xpath}").all()
                 print(f"  Section {div_index}, List {ul_index}: {len(lis)} countries")
                 
@@ -253,6 +259,7 @@ def scrape_cities_for_country(page, country_url: str, country_name: str) -> List
     print(f"Processing {len(all_city_letter_links)} city letter links")
     
     for link_index, city_letter_url in enumerate(all_city_letter_links, 1):
+        print(f"\n[{link_index}/{len(all_city_letter_links)}] Navigating to: {city_letter_url}")
         # Delay between navigations
         if link_index > 1:
             time.sleep(random.uniform(1, 3))
