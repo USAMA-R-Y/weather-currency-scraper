@@ -35,8 +35,8 @@ wheels/
 data/weather_tracker.db
 
 # Logs
-*.log
-data/logs/
+# *.log
+# data/logs/
 
 # IDE
 .vscode/

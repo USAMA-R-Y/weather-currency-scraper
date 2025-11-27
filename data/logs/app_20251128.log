@@ -1,0 +1,11 @@
+2025-11-28 00:00:04 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251128.log
+2025-11-28 00:00:04 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251128.log
+2025-11-28 00:00:04 - app.core.logger - INFO - Starting Automated Weather Tracker...
+2025-11-28 00:00:04 - app.jobs.scheduler - INFO - Scheduler created with timezone: UTC
+2025-11-28 00:00:04 - app.jobs.scheduler - INFO - Job registration complete: 0 one-off, 0 recurring
+2025-11-28 00:00:04 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-28 00:00:04 - app.jobs.scheduler - INFO - Scheduler started successfully
+2025-11-28 00:00:04 - app.core.logger - INFO - Scheduler initialized successfully
+2025-11-28 00:00:34 - app.core.logger - INFO - Shutting down Automated Weather Tracker...
+2025-11-28 00:00:46 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251128.log
+2025-11-28 00:00:46 - app.core.logger - INFO - Logging initialized - Level: INFO, File: data/logs/app_20251128.log
