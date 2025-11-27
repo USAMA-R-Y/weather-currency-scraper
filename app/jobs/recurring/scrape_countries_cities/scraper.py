@@ -37,14 +37,15 @@ def wait_for_element_with_retry(page, xpath: str, retries: int = 5, wait_time: i
     """
     for attempt in range(retries):
         try:
-            print(f"Waiting for element (attempt {attempt + 1}/{retries})...")
             element = page.locator(f"xpath={xpath}").first
             element.wait_for(state="visible", timeout=wait_time)
             return element
         except PlaywrightTimeoutError:
             if attempt < retries - 1:
+                print(f"Waiting for element (retry {attempt + 2}/{retries})...")
                 time.sleep(random.uniform(2, 4))
             else:
+                print(f"Element not found after {retries} attempts")
                 return None
     return None
 
@@ -70,7 +71,7 @@ def scrape_countries(page) -> List[Dict[str, str]]:
     try:
         print(f"Navigating to: {target_url}")
         page.goto(target_url, wait_until="domcontentloaded")
-        time.sleep(random.uniform(2, 4))
+        time.sleep(random.uniform(1, 4))
         
         divs_xpath = "//div[@class='mapctrytab-cont']"
         container_divs = wait_for_element_with_retry(page, divs_xpath, retries=5)
@@ -122,7 +123,7 @@ def scrape_countries(page) -> List[Dict[str, str]]:
             
             # Small delay between sections to mimic human behavior
             if div_index < len(all_divs):
-                time.sleep(random.uniform(2, 4))
+                time.sleep(random.uniform(1, 4))
         
         print(f"\n{'='*60}")
         print(f"Successfully scraped {len(countries_data)} countries")
@@ -153,18 +154,65 @@ def scrape_cities_for_country(page, country_url: str, country_name: str) -> List
     
     print(f"Navigating to: {country_name}")
     page.goto(country_url, wait_until="domcontentloaded")
-    time.sleep(random.uniform(2, 4))
+    time.sleep(random.uniform(1, 4))
     
     letter_nav_xpath = "//div[@class='letter_nav']"
     letter_nav = wait_for_element_with_retry(page, letter_nav_xpath, retries=3, wait_time=2000)
     
+    # If no letter_nav found, scrape cities directly from b-wrapper
     if not letter_nav:
-        print(f"  ⚠ No letter_nav found for {country_name}")
+        print(f"  → No letter navigation found, scraping cities directly")
+        
+        b_wrapper_xpath = "//section[@class='b-wrapper']"
+        b_wrapper = wait_for_element_with_retry(page, b_wrapper_xpath, retries=3, wait_time=2000)
+        
+        if not b_wrapper:
+            print(f"  ⚠ No cities found for {country_name}")
+            return cities_data
+        
+        time.sleep(random.uniform(1, 4))
+        
+        # Get all li items with class 'b-list-table__item'
+        li_xpath = "//section[@class='b-wrapper']//ul//li[@class='b-list-table__item']"
+        lis = page.locator(f"xpath={li_xpath}").all()
+        
+        print(f"  → Found {len(lis)} cities")
+        
+        for li_index, li in enumerate(lis, 1):
+            try:
+                # Find span with class 'b-list-table__item-name' and then anchor tag
+                anchor_xpath = ".//span[@class='b-list-table__item-name']//a"
+                anchor = li.locator(f"xpath={anchor_xpath}").first
+                
+                # Get href and text
+                href = anchor.get_attribute("href")
+                city_name = anchor.inner_text().strip()
+                
+                # Process URL
+                if href:
+                    if href.startswith("http"):
+                        full_url = href
+                    else:
+                        full_url = urljoin(base_url, href)
+                else:
+                    full_url = None
+                
+                cities_data.append({
+                    "name": city_name,
+                    "url": full_url
+                })
+                
+            except Exception as e:
+                print(f"    [!] Error processing city {li_index}: {e}")
+                continue
+        
+        print(f"Scraped {len(cities_data)} cities for {country_name}")
         return cities_data
     
-    # Wait before scraping
-    time.sleep(random.uniform(2, 4))
+    # Letter navigation exists - process with filters
+    time.sleep(random.uniform(1, 4))
     
+    lower_tr_xpath = "//div[@class='letter_nav']//tr[@class='lower']"
     lower_trs = page.locator(f"xpath={lower_tr_xpath}").all()
     
     # Collect all city letter links first
@@ -186,6 +234,7 @@ def scrape_cities_for_country(page, country_url: str, country_name: str) -> List
             if not target_td:
                 continue
             
+            anchor_xpath = ".//a"
             anchors = target_td.locator(f"xpath={anchor_xpath}").all()
             
             for anchor in anchors:
@@ -209,7 +258,7 @@ def scrape_cities_for_country(page, country_url: str, country_name: str) -> List
             time.sleep(random.uniform(1, 3))
         
         page.goto(city_letter_url, wait_until="domcontentloaded")
-        time.sleep(random.uniform(2, 4))
+        time.sleep(random.uniform(1, 4))
         
         b_wrapper_xpath = "//section[@class='b-wrapper']"
         b_wrapper = wait_for_element_with_retry(page, b_wrapper_xpath, retries=3, wait_time=2000)
@@ -219,6 +268,7 @@ def scrape_cities_for_country(page, country_url: str, country_name: str) -> List
         
         time.sleep(random.uniform(2, 4))
         
+        li_xpath = "//section[@class='b-wrapper']//ul//li[@class='b-list-table__item']"
         lis = page.locator(f"xpath={li_xpath}").all()
         
         for li_index, li in enumerate(lis, 1):
@@ -252,7 +302,7 @@ def scrape_cities_for_country(page, country_url: str, country_name: str) -> List
         
         # Small delay between letter links
         if link_index < len(all_city_letter_links):
-            time.sleep(random.uniform(2, 4))
+            time.sleep(random.uniform(1, 4))
     
     print(f"Scraped {len(cities_data)} cities for {country_name}")
     
@@ -510,8 +560,8 @@ def scrape_countries_cities_main():
                 
                 # Delay between countries to mimic human behavior
                 if country_index < total_countries:
-                    print(f"\n  → Waiting 2-4 seconds before next country...")
-                    time.sleep(random.uniform(2, 4))
+                    print(f"\n  → Waiting before next country...")
+                    time.sleep(random.uniform(1, 4))
             
             print(f"\n{'='*60}")
             print("✓ Script completed successfully!")
