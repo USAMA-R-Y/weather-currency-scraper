@@ -11,6 +11,9 @@ import argparse
 import sys
 import time
 import random
+import json
+import os
+from datetime import datetime
 from typing import List, Dict, Optional
 from urllib.parse import urljoin
 
@@ -448,25 +451,71 @@ def upsert_cities_to_db(cities_data: List[Dict[str, str]], country_id: str, coun
         db.close()
 
 
-def scrape_countries_cities_main():
-    """Main execution function"""
-    parser = argparse.ArgumentParser(description="Scrape countries and cities from weather-forecast.com")
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Run in headed mode for debugging (browser visible)"
-    )
-    parser.add_argument(
-        "--limit",
-        type=int,
-        default=None,
-        help="Limit number of countries to process (for testing)"
-    )
+def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = None, snapshots: bool = False):
+    """
+    Main execution function
     
-    args = parser.parse_args()
+    Args:
+        headless: Run browser in headless mode (default: True)
+        limit: Limit number of countries to process (default: None = all countries)
+        snapshots: Save snapshots of scraped data as JSON files (default: False)
+    """
+    # If called from command line, parse arguments
+    if __name__ == "__main__":
+        parser = argparse.ArgumentParser(description="Scrape countries and cities from weather-forecast.com")
+        parser.add_argument(
+            "--dry-run",
+            action="store_true",
+            help="Run in headed mode for debugging (browser visible)"
+        )
+        parser.add_argument(
+            "--limit",
+            type=int,
+            default=None,
+            help="Limit number of countries to process (for testing)"
+        )
+        parser.add_argument(
+            "--snapshots",
+            action="store_true",
+            help="Save snapshots of scraped data as JSON files"
+        )
+        
+        args = parser.parse_args()
+        
+        # Override parameters with command line arguments
+        headless = not args.dry_run
+        limit = args.limit
+        snapshots = args.snapshots
+    
+    # Snapshot configuration
+    snapshot_enabled = snapshots
+    snapshot_data = []
+    snapshot_file_path = None
+    snapshot_success = False
+    
+    if snapshot_enabled:
+        # Define snapshot directory and file path using pathlib
+        from pathlib import Path
+        
+        # Get project root (4 levels up from this script)
+        project_root = Path(__file__).resolve().parent.parent.parent.parent
+        snapshot_dir = project_root / "data" / "snapshots" / "scrape_countries_cities"
+        snapshot_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Generate filename with current date
+        current_date = datetime.now().strftime("%Y-%m-%d")
+        
+        # Check if snapshot for today already exists and delete it
+        existing_snapshots = list(snapshot_dir.glob(f"{current_date}*"))
+        for existing_path in existing_snapshots:
+            print(f"Removing existing snapshot: {existing_path}")
+            existing_path.unlink()
+        
+        # Create new snapshot file path
+        snapshot_file_path = snapshot_dir / f"{current_date}_countries_cities.json"
+        print(f"Snapshots enabled. Will save to: {snapshot_file_path}\n")
     
     # Determine headless mode (default: True, unless --dry-run is specified)
-    headless = not args.dry_run
     
     print(f"\n{'='*60}")
     print(f"Starting scraper in {'HEADLESS' if headless else 'HEADED'} mode")
@@ -505,17 +554,26 @@ def scrape_countries_cities_main():
             # Upsert countries to database and get country IDs
             country_name_to_id = upsert_countries_to_db(countries_data)
             
+            # Initialize snapshot data if enabled
+            if snapshot_enabled:
+                for country in countries_data:
+                    snapshot_data.append({
+                        "country": country["name"],
+                        "url": country["url"],
+                        "cities": []
+                    })
+            
             # PHASE 2: Scrape cities for each country
             print(f"\n{'='*60}")
             print("PHASE 2: SCRAPING CITIES FOR EACH COUNTRY")
             print(f"{'='*60}\n")
             
             # Apply limit if specified
-            countries_to_process = countries_data[:args.limit] if args.limit else countries_data
+            countries_to_process = countries_data[:limit] if limit else countries_data
             total_countries = len(countries_to_process)
             
-            if args.limit:
-                print(f"⚠ Processing limited to {args.limit} countries (testing mode)\n")
+            if limit:
+                print(f"⚠ Processing limited to {limit} countries (testing mode)\n")
             
             for country_index, country in enumerate(countries_to_process, 1):
                 country_name = country["name"]
@@ -543,6 +601,14 @@ def scrape_countries_cities_main():
                         if cities_data:
                             # Upsert cities to database
                             upsert_cities_to_db(cities_data, country_id, country_name)
+                            
+                            # Add cities to snapshot data if enabled
+                            if snapshot_enabled:
+                                # Find the country object in snapshot_data array
+                                for country_obj in snapshot_data:
+                                    if country_obj["country"] == country_name:
+                                        country_obj["cities"] = cities_data
+                                        break
                         else:
                             print(f"  ⚠ No cities found for {country_name}")
                         
@@ -574,13 +640,34 @@ def scrape_countries_cities_main():
             print("✓ Script completed successfully!")
             print(f"{'='*60}\n")
             
+            # Mark snapshot as successful
+            snapshot_success = True
+            
         except Exception as e:
             print(f"\nERROR during execution: {e}")
             import traceback
             traceback.print_exc()
+            snapshot_success = False
             sys.exit(1)
         
         finally:
+            # Save snapshot if enabled and successful
+            if snapshot_enabled and snapshot_success and snapshot_file_path:
+                try:
+                    with open(snapshot_file_path, 'w', encoding='utf-8') as f:
+                        json.dump(snapshot_data, f, indent=2, ensure_ascii=False)
+                    print(f"✓ Snapshot saved successfully: {snapshot_file_path}\n")
+                except Exception as e:
+                    print(f"⚠ Failed to save snapshot: {e}\n")
+            elif snapshot_enabled and not snapshot_success and snapshot_file_path:
+                # Delete snapshot file if script failed
+                if snapshot_file_path.exists():
+                    try:
+                        snapshot_file_path.unlink()
+                        print(f"⚠ Snapshot deleted due to script failure: {snapshot_file_path}\n")
+                    except Exception as e:
+                        print(f"⚠ Failed to delete snapshot: {e}\n")
+            
             # Close browser
             print("Closing browser...")
             try:
