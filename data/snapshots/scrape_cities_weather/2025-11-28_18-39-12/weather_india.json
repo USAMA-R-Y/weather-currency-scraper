@@ -1,0 +1,20 @@
+[
+  {
+    "city": "Mumbai",
+    "url": "https://www.weather-forecast.com/locations/Mumbai/forecasts/latest",
+    "scraped_at": "2025-11-28T18:39:16.130106",
+    "weather": {}
+  },
+  {
+    "city": "Delhi",
+    "url": "https://www.weather-forecast.com/locations/Delhi/forecasts/latest",
+    "scraped_at": "2025-11-28T18:39:16.130129",
+    "weather": {}
+  },
+  {
+    "city": "Bangalore",
+    "url": "https://www.weather-forecast.com/locations/Bangalore/forecasts/latest",
+    "scraped_at": "2025-11-28T18:39:16.130140",
+    "weather": {}
+  }
+]
