@@ -619,6 +619,13 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
                                     if country_obj["country"] == country_name:
                                         country_obj["cities"] = cities_data
                                         break
+                                
+                                # Save snapshot incrementally after each country
+                                try:
+                                    with open(snapshot_file_path, 'w', encoding='utf-8') as f:
+                                        json.dump(snapshot_data, f, indent=2, ensure_ascii=False)
+                                except Exception as e:
+                                    print(f"  ⚠ Warning: Failed to save incremental snapshot: {e}")
                         else:
                             print(f"  ⚠ No cities found for {country_name}")
                         
