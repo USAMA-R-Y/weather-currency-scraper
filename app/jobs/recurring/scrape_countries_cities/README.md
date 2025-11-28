@@ -7,7 +7,7 @@ Scrapes country and city data from weather-forecast.com and stores it in the dat
 ### Command Line
 
 ```bash
-# Run in headless mode (default)
+# Run in headless mode (default: stores snapshots only)
 python -m app.jobs.recurring.scrape_countries_cities.scraper
 
 # Run with browser visible (for debugging)
@@ -16,11 +16,11 @@ python -m app.jobs.recurring.scrape_countries_cities.scraper --dry-run
 # Limit to first N countries (for testing)
 python -m app.jobs.recurring.scrape_countries_cities.scraper --limit 5
 
-# Save snapshots of scraped data
-python -m app.jobs.recurring.scrape_countries_cities.scraper --snapshots
+# Store data in database AND snapshots
+python -m app.jobs.recurring.scrape_countries_cities.scraper --db-store
 
 # Combine options
-python -m app.jobs.recurring.scrape_countries_cities.scraper --dry-run --limit 10 --snapshots
+python -m app.jobs.recurring.scrape_countries_cities.scraper --dry-run --limit 10 --db-store
 ```
 
 ### Programmatic Usage
@@ -28,14 +28,14 @@ python -m app.jobs.recurring.scrape_countries_cities.scraper --dry-run --limit 1
 ```python
 from app.jobs.recurring.scrape_countries_cities import scrape_countries_cities_main
 
-# Run with default settings (headless, all countries, no snapshots)
+# Run with default settings (headless, all countries, snapshots only)
 scrape_countries_cities_main()
 
 # Run with custom settings
 scrape_countries_cities_main(
     headless=True,      # Run in headless mode
     limit=10,           # Process only 10 countries
-    snapshots=True      # Save snapshots
+    db_store=True       # Store in database (and snapshots)
 )
 ```
 
@@ -45,7 +45,7 @@ scrape_countries_cities_main(
 |----------|------|---------|-------------|
 | `--dry-run` | flag | `False` | Run in headed mode (browser visible) for debugging |
 | `--limit` | int | `None` | Limit number of countries to process (useful for testing) |
-| `--snapshots` | flag | `False` | Save snapshots of scraped data as JSON files |
+| `--db-store` | flag | `False` | Store scraped data in database (snapshots are always saved) |
 
 ## Features
 

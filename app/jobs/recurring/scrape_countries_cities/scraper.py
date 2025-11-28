@@ -451,14 +451,14 @@ def upsert_cities_to_db(cities_data: List[Dict[str, str]], country_id: str, coun
         db.close()
 
 
-def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = None, snapshots: bool = False):
+def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = None, db_store: bool = False):
     """
     Main execution function
     
     Args:
         headless: Run browser in headless mode (default: True)
         limit: Limit number of countries to process (default: None = all countries)
-        snapshots: Save snapshots of scraped data as JSON files (default: False)
+        db_store: Store data in database (default: False)
     """
     # If called from command line, parse arguments
     if __name__ == "__main__":
@@ -475,9 +475,9 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
             help="Limit number of countries to process (for testing)"
         )
         parser.add_argument(
-            "--snapshots",
+            "--db-store",
             action="store_true",
-            help="Save snapshots of scraped data as JSON files"
+            help="Store scraped data in database (default: snapshots only)"
         )
         
         args = parser.parse_args()
@@ -485,35 +485,39 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
         # Override parameters with command line arguments
         headless = not args.dry_run
         limit = args.limit
-        snapshots = args.snapshots
+        db_store = args.db_store
     
-    # Snapshot configuration
-    snapshot_enabled = snapshots
+    # Snapshot configuration (always enabled by default)
+    snapshot_enabled = True
     snapshot_data = []
     snapshot_file_path = None
     snapshot_success = False
     
-    if snapshot_enabled:
-        # Define snapshot directory and file path using pathlib
-        from pathlib import Path
-        
-        # Get project root (4 levels up from this script)
-        project_root = Path(__file__).resolve().parent.parent.parent.parent
-        snapshot_dir = project_root / "data" / "snapshots" / "scrape_countries_cities"
-        snapshot_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Generate filename with current date
-        current_date = datetime.now().strftime("%Y-%m-%d")
-        
-        # Check if snapshot for today already exists and delete it
-        existing_snapshots = list(snapshot_dir.glob(f"{current_date}*"))
-        for existing_path in existing_snapshots:
-            print(f"Removing existing snapshot: {existing_path}")
-            existing_path.unlink()
-        
-        # Create new snapshot file path
-        snapshot_file_path = snapshot_dir / f"{current_date}_countries_cities.json"
-        print(f"Snapshots enabled. Will save to: {snapshot_file_path}\n")
+    # Define snapshot directory and file path using pathlib
+    from pathlib import Path
+    
+    # Get project root (4 levels up from this script)
+    project_root = Path(__file__).resolve().parent.parent.parent.parent
+    snapshot_dir = project_root / "data" / "snapshots" / "scrape_countries_cities"
+    snapshot_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Generate filename with current date
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    
+    # Check if snapshot for today already exists and delete it
+    existing_snapshots = list(snapshot_dir.glob(f"{current_date}*"))
+    for existing_path in existing_snapshots:
+        print(f"Removing existing snapshot: {existing_path}")
+        existing_path.unlink()
+    
+    # Create new snapshot file path
+    snapshot_file_path = snapshot_dir / f"{current_date}_countries_cities.json"
+    print(f"Snapshots enabled. Will save to: {snapshot_file_path}\n")
+    
+    if db_store:
+        print("Database storage enabled (--db-store flag provided)\n")
+    else:
+        print("Database storage disabled (default behavior). Use --db-store to enable.\n")
     
     # Determine headless mode (default: True, unless --dry-run is specified)
     
@@ -551,8 +555,10 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
                 print("\n⚠ No countries data scraped. Exiting.")
                 sys.exit(1)
             
-            # Upsert countries to database and get country IDs
-            country_name_to_id = upsert_countries_to_db(countries_data)
+            # Upsert countries to database and get country IDs (only if DB store enabled)
+            country_name_to_id = {}
+            if db_store:
+                country_name_to_id = upsert_countries_to_db(countries_data)
             
             # Initialize snapshot data if enabled
             if snapshot_enabled:
@@ -578,11 +584,14 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
             for country_index, country in enumerate(countries_to_process, 1):
                 country_name = country["name"]
                 country_url = country["url"]
-                country_id = country_name_to_id.get(country_name)
                 
-                if not country_id:
-                    print(f"[{country_index}/{total_countries}] ⚠ Skipping {country_name} - no ID found")
-                    continue
+                # Only check for ID if DB store is enabled
+                country_id = None
+                if db_store:
+                    country_id = country_name_to_id.get(country_name)
+                    if not country_id:
+                        print(f"[{country_index}/{total_countries}] ⚠ Skipping {country_name} - no ID found")
+                        continue
                 
                 if not country_url:
                     print(f"[{country_index}/{total_countries}] ⚠ Skipping {country_name} - no URL")
@@ -599,8 +608,9 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
                         cities_data = scrape_cities_for_country(page, country_url, country_name)
                         
                         if cities_data:
-                            # Upsert cities to database
-                            upsert_cities_to_db(cities_data, country_id, country_name)
+                            # Upsert cities to database (only if enabled)
+                            if db_store and country_id:
+                                upsert_cities_to_db(cities_data, country_id, country_name)
                             
                             # Add cities to snapshot data if enabled
                             if snapshot_enabled:
@@ -634,7 +644,7 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
                 # Delay between countries to mimic human behavior
                 if country_index < total_countries:
                     print(f"\n  → Waiting before next country...")
-                    time.sleep(random.uniform(1, 4))
+                    time.sleep(random.uniform(4, 7))
             
             print(f"\n{'='*60}")
             print("✓ Script completed successfully!")
