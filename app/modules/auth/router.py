@@ -9,7 +9,7 @@ from app.modules.auth.dependencies import (
     get_current_active_user,
     require_superuser
 )
-from app.modules.auth import service, repository
+from app.modules.auth import service
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
@@ -112,7 +112,7 @@ def update_current_user(
     user_update.is_active = None
     user_update.permissions = None
     
-    updated_user = repository.update_user(db, current_user.id, user_update)
+    updated_user = service.update_user(db, current_user.id, user_update)
     if not updated_user:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -140,7 +140,7 @@ def list_users(
     Returns:
         List of users
     """
-    return repository.get_users(db, skip=skip, limit=limit)
+    return service.get_users(db, skip=skip, limit=limit)
 
 
 @router.put("/users/{user_id}", response_model=UserInDB)
@@ -165,7 +165,7 @@ def update_user(
     Raises:
         HTTPException: If user not found
     """
-    updated_user = repository.update_user(db, user_id, user_update)
+    updated_user = service.update_user(db, user_id, user_update)
     if not updated_user:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -191,7 +191,7 @@ def delete_user(
     Raises:
         HTTPException: If user not found
     """
-    if not repository.delete_user(db, user_id):
+    if not service.delete_user(db, user_id):
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="User not found"

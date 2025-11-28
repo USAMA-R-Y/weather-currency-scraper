@@ -4,16 +4,11 @@ from app.jobs.recurring.scrape_countries_cities import scrape_countries_cities_m
 import random
 
 
-def scrape_countries_cities_job():
-    """Wrapper function to run scraper with snapshots enabled"""
-    scrape_countries_cities_main(headless=True, limit=None, snapshots=True)
-
-
 # List of all recurring jobs
 RECURRING_JOBS = [
     RecurringJobSpec(
         module="app.jobs.recurring.scrape_countries_cities",
-        func=scrape_countries_cities_job,
+        func=scrape_countries_cities_main,
         job_id="scrape_countries_cities",
         name="Scrape Countries and Cities",
         # Run on a random weekday (mon-fri) at a random hour between 13:00-19:00
