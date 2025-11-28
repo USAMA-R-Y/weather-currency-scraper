@@ -1,0 +1,14 @@
+[
+  {
+    "city": "Dhaka",
+    "url": "https://www.weather-forecast.com/locations/Dhaka/forecasts/latest",
+    "scraped_at": "2025-11-28T18:39:21.677161",
+    "weather": {}
+  },
+  {
+    "city": "Chittagong",
+    "url": "https://www.weather-forecast.com/locations/Chittagong/forecasts/latest",
+    "scraped_at": "2025-11-28T18:39:21.677204",
+    "weather": {}
+  }
+]

@@ -9,6 +9,13 @@ class Country(BaseModel):
     url = Column(String, nullable=True)
 
     cities = relationship("City", back_populates="country", cascade="all, delete-orphan")
+    
+    # Many-to-many relationship with users
+    preferred_by_users = relationship(
+        "User",
+        secondary="user_preferred_countries",
+        back_populates="preferred_countries"
+    )
 
 class City(BaseModel):
     __tablename__ = "cities"

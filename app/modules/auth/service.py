@@ -108,3 +108,22 @@ def delete_user(db: Session, user_id: str) -> bool:
         True if user was deleted, False if not found
     """
     return repository.delete_user(db, user_id)
+
+
+def get_user_preferred_countries(db: Session, user_id: str) -> List[str]:
+    """
+    Get list of preferred country names for a user.
+    
+    Args:
+        db: Database session
+        user_id: ID of the user
+        
+    Returns:
+        List of country names
+    """
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        return []
+    
+    return [country.name for country in user.preferred_countries]
+
