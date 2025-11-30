@@ -34,8 +34,8 @@ DEFAULT_COUNTRIES = ["Pakistan", "India"]
 
 
 def get_project_root() -> Path:
-    """Get the project root directory (5 levels up from this script)"""
-    return Path(__file__).resolve().parent.parent.parent.parent.parent
+    """Get the project root directory (4 levels up from this script)"""
+    return Path(__file__).resolve().parent.parent.parent.parent
 
 
 def get_cities_from_db(country_name: str) -> List[Dict[str, str]]:

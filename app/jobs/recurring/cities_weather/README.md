@@ -67,7 +67,7 @@ scrape_cities_weather_main(
 Weather data is saved in datetime-based directories:
 
 ```
-data/snapshots/scrape_cities_weather/
+app/data/snapshots/scrape_cities_weather/
 └── YYYY-MM-DD_HH-MM-SS/
     ├── weather_pakistan.json
     ├── weather_india.json
