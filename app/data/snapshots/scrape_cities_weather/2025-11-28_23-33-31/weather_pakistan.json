@@ -1,0 +1,2066 @@
+[
+  {
+    "city": "Abbotabad",
+    "url": "https://www.weather-forecast.com/locations/Abbotabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872459",
+    "weather": {}
+  },
+  {
+    "city": "Ahmadpur Sial",
+    "url": "https://www.weather-forecast.com/locations/Ahmadpur-Sial/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872478",
+    "weather": {}
+  },
+  {
+    "city": "Ahmedpur East",
+    "url": "https://www.weather-forecast.com/locations/Ahmadpur-East/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872485",
+    "weather": {}
+  },
+  {
+    "city": "Akora",
+    "url": "https://www.weather-forecast.com/locations/Akora/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872491",
+    "weather": {}
+  },
+  {
+    "city": "Alipur",
+    "url": "https://www.weather-forecast.com/locations/Alipur-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872497",
+    "weather": {}
+  },
+  {
+    "city": "Amangarh",
+    "url": "https://www.weather-forecast.com/locations/Amangarh/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872503",
+    "weather": {}
+  },
+  {
+    "city": "Arifwala",
+    "url": "https://www.weather-forecast.com/locations/Arifwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872509",
+    "weather": {}
+  },
+  {
+    "city": "Attock City",
+    "url": "https://www.weather-forecast.com/locations/Attock-City/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872522",
+    "weather": {}
+  },
+  {
+    "city": "Baddomalhi",
+    "url": "https://www.weather-forecast.com/locations/Baddomalhi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872529",
+    "weather": {}
+  },
+  {
+    "city": "Badin",
+    "url": "https://www.weather-forecast.com/locations/Badin/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872535",
+    "weather": {}
+  },
+  {
+    "city": "Baffa",
+    "url": "https://www.weather-forecast.com/locations/Baffa/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872540",
+    "weather": {}
+  },
+  {
+    "city": "Bahawalnagar",
+    "url": "https://www.weather-forecast.com/locations/Bahawalnagar-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872546",
+    "weather": {}
+  },
+  {
+    "city": "Bahawalpur",
+    "url": "https://www.weather-forecast.com/locations/Bahawalpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872551",
+    "weather": {}
+  },
+  {
+    "city": "Bahawalpur",
+    "url": "https://www.weather-forecast.com/locations/Bahawalnagar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872556",
+    "weather": {}
+  },
+  {
+    "city": "Bannu",
+    "url": "https://www.weather-forecast.com/locations/Bannu/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872561",
+    "weather": {}
+  },
+  {
+    "city": "Basirpur",
+    "url": "https://www.weather-forecast.com/locations/Basirpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872567",
+    "weather": {}
+  },
+  {
+    "city": "Bat Khela",
+    "url": "https://www.weather-forecast.com/locations/Bat-Khela/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872573",
+    "weather": {}
+  },
+  {
+    "city": "Bela",
+    "url": "https://www.weather-forecast.com/locations/Bela-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872578",
+    "weather": {}
+  },
+  {
+    "city": "Bhag",
+    "url": "https://www.weather-forecast.com/locations/Bhag/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872584",
+    "weather": {}
+  },
+  {
+    "city": "Bhai Pheru",
+    "url": "https://www.weather-forecast.com/locations/Bhai-Pheru/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872589",
+    "weather": {}
+  },
+  {
+    "city": "Bhakkar",
+    "url": "https://www.weather-forecast.com/locations/Bhakkar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872594",
+    "weather": {}
+  },
+  {
+    "city": "Bhalwal",
+    "url": "https://www.weather-forecast.com/locations/Bhalwal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872600",
+    "weather": {}
+  },
+  {
+    "city": "Bhan",
+    "url": "https://www.weather-forecast.com/locations/Bhan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872605",
+    "weather": {}
+  },
+  {
+    "city": "Bhawana",
+    "url": "https://www.weather-forecast.com/locations/Bhawana/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872611",
+    "weather": {}
+  },
+  {
+    "city": "Bhera",
+    "url": "https://www.weather-forecast.com/locations/Bhera/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872616",
+    "weather": {}
+  },
+  {
+    "city": "Bhimbar",
+    "url": "https://www.weather-forecast.com/locations/Bhimbar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872621",
+    "weather": {}
+  },
+  {
+    "city": "Bhiria",
+    "url": "https://www.weather-forecast.com/locations/Bhiria/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872627",
+    "weather": {}
+  },
+  {
+    "city": "Bhit Shah",
+    "url": "https://www.weather-forecast.com/locations/Bhit-Shah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872632",
+    "weather": {}
+  },
+  {
+    "city": "Bhopalwala",
+    "url": "https://www.weather-forecast.com/locations/Bhopalwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872637",
+    "weather": {}
+  },
+  {
+    "city": "Burewala",
+    "url": "https://www.weather-forecast.com/locations/Burewala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872643",
+    "weather": {}
+  },
+  {
+    "city": "Chak",
+    "url": "https://www.weather-forecast.com/locations/Chak/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872648",
+    "weather": {}
+  },
+  {
+    "city": "Chak Azam Saffo",
+    "url": "https://www.weather-forecast.com/locations/Chak-Azam-Saffo/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872655",
+    "weather": {}
+  },
+  {
+    "city": "Chakwal",
+    "url": "https://www.weather-forecast.com/locations/Chakwal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872660",
+    "weather": {}
+  },
+  {
+    "city": "Chaman",
+    "url": "https://www.weather-forecast.com/locations/Chaman/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872666",
+    "weather": {}
+  },
+  {
+    "city": "Chambar",
+    "url": "https://www.weather-forecast.com/locations/Chambar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872671",
+    "weather": {}
+  },
+  {
+    "city": "Charsadda",
+    "url": "https://www.weather-forecast.com/locations/Charsadda/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872676",
+    "weather": {}
+  },
+  {
+    "city": "Chawinda",
+    "url": "https://www.weather-forecast.com/locations/Chawinda/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872683",
+    "weather": {}
+  },
+  {
+    "city": "Chhor",
+    "url": "https://www.weather-forecast.com/locations/Chhor/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872688",
+    "weather": {}
+  },
+  {
+    "city": "Chichawatni",
+    "url": "https://www.weather-forecast.com/locations/Chichawatni/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872693",
+    "weather": {}
+  },
+  {
+    "city": "Chiniot",
+    "url": "https://www.weather-forecast.com/locations/Chiniot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872699",
+    "weather": {}
+  },
+  {
+    "city": "Chishtian",
+    "url": "https://www.weather-forecast.com/locations/Chishtian/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872704",
+    "weather": {}
+  },
+  {
+    "city": "Choa Saidan Shah",
+    "url": "https://www.weather-forecast.com/locations/Choa-Saidan-Shah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872710",
+    "weather": {}
+  },
+  {
+    "city": "Chuhar Jamali",
+    "url": "https://www.weather-forecast.com/locations/Chuhar-Jamali/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872715",
+    "weather": {}
+  },
+  {
+    "city": "Chuhar Kana",
+    "url": "https://www.weather-forecast.com/locations/Chuhar-Kana/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872721",
+    "weather": {}
+  },
+  {
+    "city": "Chunian",
+    "url": "https://www.weather-forecast.com/locations/Chunian/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872726",
+    "weather": {}
+  },
+  {
+    "city": "Dadhar",
+    "url": "https://www.weather-forecast.com/locations/Dadhar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872732",
+    "weather": {}
+  },
+  {
+    "city": "Dadu",
+    "url": "https://www.weather-forecast.com/locations/Dadu/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872737",
+    "weather": {}
+  },
+  {
+    "city": "Daira Din Panah",
+    "url": "https://www.weather-forecast.com/locations/Daira-Din-Panah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872743",
+    "weather": {}
+  },
+  {
+    "city": "Dajal",
+    "url": "https://www.weather-forecast.com/locations/Dajal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872749",
+    "weather": {}
+  },
+  {
+    "city": "Dalbandin",
+    "url": "https://www.weather-forecast.com/locations/Dalbandin/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872754",
+    "weather": {}
+  },
+  {
+    "city": "Daro Mehar",
+    "url": "https://www.weather-forecast.com/locations/Daro-Mehar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872759",
+    "weather": {}
+  },
+  {
+    "city": "Darya Khan",
+    "url": "https://www.weather-forecast.com/locations/Darya-Khan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872765",
+    "weather": {}
+  },
+  {
+    "city": "Daska",
+    "url": "https://www.weather-forecast.com/locations/Daska/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872770",
+    "weather": {}
+  },
+  {
+    "city": "Daud Khel",
+    "url": "https://www.weather-forecast.com/locations/Daud-Khel/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872776",
+    "weather": {}
+  },
+  {
+    "city": "Daulatpur",
+    "url": "https://www.weather-forecast.com/locations/Daulatpur-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872781",
+    "weather": {}
+  },
+  {
+    "city": "Daultala",
+    "url": "https://www.weather-forecast.com/locations/Daultala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872787",
+    "weather": {}
+  },
+  {
+    "city": "Daur",
+    "url": "https://www.weather-forecast.com/locations/Daur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872792",
+    "weather": {}
+  },
+  {
+    "city": "Dera Bugti",
+    "url": "https://www.weather-forecast.com/locations/Dera-Bugti/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872798",
+    "weather": {}
+  },
+  {
+    "city": "Dera Ghazi Khan",
+    "url": "https://www.weather-forecast.com/locations/Dera-Ghazi-Khan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872804",
+    "weather": {}
+  },
+  {
+    "city": "Dera Ismail Khan",
+    "url": "https://www.weather-forecast.com/locations/Dera-Ismail-Khan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872809",
+    "weather": {}
+  },
+  {
+    "city": "Dhanote",
+    "url": "https://www.weather-forecast.com/locations/Dhanot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872814",
+    "weather": {}
+  },
+  {
+    "city": "Dhaunkal",
+    "url": "https://www.weather-forecast.com/locations/Dhaunkal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872820",
+    "weather": {}
+  },
+  {
+    "city": "Dhoro Naro",
+    "url": "https://www.weather-forecast.com/locations/Dhoro-Naro/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872825",
+    "weather": {}
+  },
+  {
+    "city": "Digri",
+    "url": "https://www.weather-forecast.com/locations/Digri/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872830",
+    "weather": {}
+  },
+  {
+    "city": "Dijkot",
+    "url": "https://www.weather-forecast.com/locations/Dijkot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872836",
+    "weather": {}
+  },
+  {
+    "city": "Dinga",
+    "url": "https://www.weather-forecast.com/locations/Dinga/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872842",
+    "weather": {}
+  },
+  {
+    "city": "Dipalpur",
+    "url": "https://www.weather-forecast.com/locations/Dipalpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872848",
+    "weather": {}
+  },
+  {
+    "city": "Diplo",
+    "url": "https://www.weather-forecast.com/locations/Diplo/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872853",
+    "weather": {}
+  },
+  {
+    "city": "Dīr",
+    "url": "https://www.weather-forecast.com/locations/Dir/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872860",
+    "weather": {}
+  },
+  {
+    "city": "Dokri",
+    "url": "https://www.weather-forecast.com/locations/Dokri/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872866",
+    "weather": {}
+  },
+  {
+    "city": "Dullewala",
+    "url": "https://www.weather-forecast.com/locations/Dullewala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872871",
+    "weather": {}
+  },
+  {
+    "city": "Dunga Bunga",
+    "url": "https://www.weather-forecast.com/locations/Dunga-Bunga/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872877",
+    "weather": {}
+  },
+  {
+    "city": "Dunyapur",
+    "url": "https://www.weather-forecast.com/locations/Dunyapur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872882",
+    "weather": {}
+  },
+  {
+    "city": "Eminabad",
+    "url": "https://www.weather-forecast.com/locations/Eminabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872887",
+    "weather": {}
+  },
+  {
+    "city": "Faisalabad",
+    "url": "https://www.weather-forecast.com/locations/Faisalabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872892",
+    "weather": {}
+  },
+  {
+    "city": "Faqirwali",
+    "url": "https://www.weather-forecast.com/locations/Faqirwali/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872898",
+    "weather": {}
+  },
+  {
+    "city": "Faruka",
+    "url": "https://www.weather-forecast.com/locations/Faruka/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872903",
+    "weather": {}
+  },
+  {
+    "city": "Fatehpur",
+    "url": "https://www.weather-forecast.com/locations/Chak-Two-Hundred-Forty-Nine-TDA/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872910",
+    "weather": {}
+  },
+  {
+    "city": "Fazalpur",
+    "url": "https://www.weather-forecast.com/locations/Fazalpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872916",
+    "weather": {}
+  },
+  {
+    "city": "Fort Abbas",
+    "url": "https://www.weather-forecast.com/locations/Fort-Abbas/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872921",
+    "weather": {}
+  },
+  {
+    "city": "Gadani",
+    "url": "https://www.weather-forecast.com/locations/Gadani/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872926",
+    "weather": {}
+  },
+  {
+    "city": "Gambat",
+    "url": "https://www.weather-forecast.com/locations/Gambat/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872931",
+    "weather": {}
+  },
+  {
+    "city": "Garh Maharaja",
+    "url": "https://www.weather-forecast.com/locations/Garh-Maharaja/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872937",
+    "weather": {}
+  },
+  {
+    "city": "Garhi Khairo",
+    "url": "https://www.weather-forecast.com/locations/Garhi-Khairo/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872942",
+    "weather": {}
+  },
+  {
+    "city": "Garhi Yasin",
+    "url": "https://www.weather-forecast.com/locations/Garhi-Yasin/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872947",
+    "weather": {}
+  },
+  {
+    "city": "Gharo",
+    "url": "https://www.weather-forecast.com/locations/Gharo/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872952",
+    "weather": {}
+  },
+  {
+    "city": "Ghauspur",
+    "url": "https://www.weather-forecast.com/locations/Ghauspur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872958",
+    "weather": {}
+  },
+  {
+    "city": "Ghotki",
+    "url": "https://www.weather-forecast.com/locations/Ghotki/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872963",
+    "weather": {}
+  },
+  {
+    "city": "Gilgit",
+    "url": "https://www.weather-forecast.com/locations/Gilgit/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872968",
+    "weather": {}
+  },
+  {
+    "city": "Gojra",
+    "url": "https://www.weather-forecast.com/locations/Gojra/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872973",
+    "weather": {}
+  },
+  {
+    "city": "Gujar Khan",
+    "url": "https://www.weather-forecast.com/locations/Gujar-Khan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872979",
+    "weather": {}
+  },
+  {
+    "city": "Gujranwala",
+    "url": "https://www.weather-forecast.com/locations/Gujranwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872985",
+    "weather": {}
+  },
+  {
+    "city": "Gujrat",
+    "url": "https://www.weather-forecast.com/locations/Gujrat/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872990",
+    "weather": {}
+  },
+  {
+    "city": "Gwadar",
+    "url": "https://www.weather-forecast.com/locations/Gwadar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.872996",
+    "weather": {}
+  },
+  {
+    "city": "Hadali",
+    "url": "https://www.weather-forecast.com/locations/Hadali-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873001",
+    "weather": {}
+  },
+  {
+    "city": "Hafizabad",
+    "url": "https://www.weather-forecast.com/locations/Hafizabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873007",
+    "weather": {}
+  },
+  {
+    "city": "Hala",
+    "url": "https://www.weather-forecast.com/locations/Hala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873012",
+    "weather": {}
+  },
+  {
+    "city": "Hangu",
+    "url": "https://www.weather-forecast.com/locations/Hangu/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873017",
+    "weather": {}
+  },
+  {
+    "city": "Haripur",
+    "url": "https://www.weather-forecast.com/locations/Haripur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873022",
+    "weather": {}
+  },
+  {
+    "city": "Harnai",
+    "url": "https://www.weather-forecast.com/locations/Harnai-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873028",
+    "weather": {}
+  },
+  {
+    "city": "Harnoli",
+    "url": "https://www.weather-forecast.com/locations/Harnoli/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873033",
+    "weather": {}
+  },
+  {
+    "city": "Harunabad",
+    "url": "https://www.weather-forecast.com/locations/Harunabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873038",
+    "weather": {}
+  },
+  {
+    "city": "Hasan Abdal",
+    "url": "https://www.weather-forecast.com/locations/Hasan-Abdal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873043",
+    "weather": {}
+  },
+  {
+    "city": "Hasilpur",
+    "url": "https://www.weather-forecast.com/locations/Hasilpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873049",
+    "weather": {}
+  },
+  {
+    "city": "Haveli",
+    "url": "https://www.weather-forecast.com/locations/Haveli/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873054",
+    "weather": {}
+  },
+  {
+    "city": "Havelian",
+    "url": "https://www.weather-forecast.com/locations/Havelian/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873059",
+    "weather": {}
+  },
+  {
+    "city": "Hazro",
+    "url": "https://www.weather-forecast.com/locations/Hazro/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873064",
+    "weather": {}
+  },
+  {
+    "city": "Hingorja",
+    "url": "https://www.weather-forecast.com/locations/Hingorja/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873070",
+    "weather": {}
+  },
+  {
+    "city": "Hujra",
+    "url": "https://www.weather-forecast.com/locations/Hujra/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873075",
+    "weather": {}
+  },
+  {
+    "city": "Hyderābād",
+    "url": "https://www.weather-forecast.com/locations/Hyderabad1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873082",
+    "weather": {}
+  },
+  {
+    "city": "Islamabad",
+    "url": "https://www.weather-forecast.com/locations/Islamabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873087",
+    "weather": {}
+  },
+  {
+    "city": "Islamkot",
+    "url": "https://www.weather-forecast.com/locations/Islamkot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873093",
+    "weather": {}
+  },
+  {
+    "city": "Jacobabad",
+    "url": "https://www.weather-forecast.com/locations/Jacobabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873098",
+    "weather": {}
+  },
+  {
+    "city": "Jahanian Shah",
+    "url": "https://www.weather-forecast.com/locations/Jahanian-Shah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873103",
+    "weather": {}
+  },
+  {
+    "city": "Jalalpur",
+    "url": "https://www.weather-forecast.com/locations/Jalalpur-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873109",
+    "weather": {}
+  },
+  {
+    "city": "Jalalpur Pirwala",
+    "url": "https://www.weather-forecast.com/locations/Jalalpur-Pirwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873114",
+    "weather": {}
+  },
+  {
+    "city": "Jampur",
+    "url": "https://www.weather-forecast.com/locations/Jampur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873119",
+    "weather": {}
+  },
+  {
+    "city": "Jand",
+    "url": "https://www.weather-forecast.com/locations/Jand/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873125",
+    "weather": {}
+  },
+  {
+    "city": "Jandiala Sher Khan",
+    "url": "https://www.weather-forecast.com/locations/Jandiala-Sher-Khan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873130",
+    "weather": {}
+  },
+  {
+    "city": "Jaranwala",
+    "url": "https://www.weather-forecast.com/locations/Jaranwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873135",
+    "weather": {}
+  },
+  {
+    "city": "Jatoi Shimali",
+    "url": "https://www.weather-forecast.com/locations/Jatoi-Shimali/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873141",
+    "weather": {}
+  },
+  {
+    "city": "Jauharabad",
+    "url": "https://www.weather-forecast.com/locations/Jauharabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873146",
+    "weather": {}
+  },
+  {
+    "city": "Jhang Sadar",
+    "url": "https://www.weather-forecast.com/locations/Jhang-Sadr/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873152",
+    "weather": {}
+  },
+  {
+    "city": "Jhawarian",
+    "url": "https://www.weather-forecast.com/locations/Jhawarian/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873157",
+    "weather": {}
+  },
+  {
+    "city": "Jhelum",
+    "url": "https://www.weather-forecast.com/locations/Jhelum/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873163",
+    "weather": {}
+  },
+  {
+    "city": "Jhol",
+    "url": "https://www.weather-forecast.com/locations/Jhol/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873168",
+    "weather": {}
+  },
+  {
+    "city": "Jhumra",
+    "url": "https://www.weather-forecast.com/locations/Jhumra/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873173",
+    "weather": {}
+  },
+  {
+    "city": "Jiwani",
+    "url": "https://www.weather-forecast.com/locations/Jiwani/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873179",
+    "weather": {}
+  },
+  {
+    "city": "Johi",
+    "url": "https://www.weather-forecast.com/locations/Johi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873184",
+    "weather": {}
+  },
+  {
+    "city": "Kabirwala",
+    "url": "https://www.weather-forecast.com/locations/Kabirwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873190",
+    "weather": {}
+  },
+  {
+    "city": "Kahna Nau",
+    "url": "https://www.weather-forecast.com/locations/Kahna/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873196",
+    "weather": {}
+  },
+  {
+    "city": "Kahuta",
+    "url": "https://www.weather-forecast.com/locations/Kahuta/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873201",
+    "weather": {}
+  },
+  {
+    "city": "Kalabagh",
+    "url": "https://www.weather-forecast.com/locations/Kalabagh/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873206",
+    "weather": {}
+  },
+  {
+    "city": "Kalaswala",
+    "url": "https://www.weather-forecast.com/locations/Kalaswala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873211",
+    "weather": {}
+  },
+  {
+    "city": "Kalat",
+    "url": "https://www.weather-forecast.com/locations/Kalat/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873216",
+    "weather": {}
+  },
+  {
+    "city": "Kaleke Mandi",
+    "url": "https://www.weather-forecast.com/locations/Kaleke-Mandi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873222",
+    "weather": {}
+  },
+  {
+    "city": "Kallar Kahar",
+    "url": "https://www.weather-forecast.com/locations/Kallar-Kahar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873227",
+    "weather": {}
+  },
+  {
+    "city": "Kalur Kot",
+    "url": "https://www.weather-forecast.com/locations/Kalur-Kot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873232",
+    "weather": {}
+  },
+  {
+    "city": "Kamalia",
+    "url": "https://www.weather-forecast.com/locations/Kamalia/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873238",
+    "weather": {}
+  },
+  {
+    "city": "Kamar Mushani",
+    "url": "https://www.weather-forecast.com/locations/Kamar-Mushani/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873243",
+    "weather": {}
+  },
+  {
+    "city": "Kamir",
+    "url": "https://www.weather-forecast.com/locations/Kamir/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873248",
+    "weather": {}
+  },
+  {
+    "city": "Kamoke",
+    "url": "https://www.weather-forecast.com/locations/Kamoke/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873254",
+    "weather": {}
+  },
+  {
+    "city": "Kamra",
+    "url": "https://www.weather-forecast.com/locations/Kamra/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873259",
+    "weather": {}
+  },
+  {
+    "city": "Kandhkot",
+    "url": "https://www.weather-forecast.com/locations/Kandhkot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873264",
+    "weather": {}
+  },
+  {
+    "city": "Kanganpur",
+    "url": "https://www.weather-forecast.com/locations/Kanganpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873270",
+    "weather": {}
+  },
+  {
+    "city": "Karachi",
+    "url": "https://www.weather-forecast.com/locations/Karachi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873275",
+    "weather": {}
+  },
+  {
+    "city": "Karak",
+    "url": "https://www.weather-forecast.com/locations/Karak/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873280",
+    "weather": {}
+  },
+  {
+    "city": "Karor",
+    "url": "https://www.weather-forecast.com/locations/Karor/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873286",
+    "weather": {}
+  },
+  {
+    "city": "Kashmor",
+    "url": "https://www.weather-forecast.com/locations/Kashmor/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873291",
+    "weather": {}
+  },
+  {
+    "city": "Kasur",
+    "url": "https://www.weather-forecast.com/locations/Kasur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873297",
+    "weather": {}
+  },
+  {
+    "city": "Khairpur",
+    "url": "https://www.weather-forecast.com/locations/Khairpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873302",
+    "weather": {}
+  },
+  {
+    "city": "Khairpur",
+    "url": "https://www.weather-forecast.com/locations/Khairpur-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873308",
+    "weather": {}
+  },
+  {
+    "city": "Khairpur",
+    "url": "https://www.weather-forecast.com/locations/Khairpur-2/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873313",
+    "weather": {}
+  },
+  {
+    "city": "Khairpur Nathan Shah",
+    "url": "https://www.weather-forecast.com/locations/Khairpur-Nathan-Shah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873318",
+    "weather": {}
+  },
+  {
+    "city": "Khalabat",
+    "url": "https://www.weather-forecast.com/locations/Khalabat/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873323",
+    "weather": {}
+  },
+  {
+    "city": "Khangah Dogran",
+    "url": "https://www.weather-forecast.com/locations/Khangah-Dogran/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873329",
+    "weather": {}
+  },
+  {
+    "city": "Khangarh",
+    "url": "https://www.weather-forecast.com/locations/Khangarh/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873334",
+    "weather": {}
+  },
+  {
+    "city": "Khanpur",
+    "url": "https://www.weather-forecast.com/locations/Khanpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873339",
+    "weather": {}
+  },
+  {
+    "city": "Khanpur",
+    "url": "https://www.weather-forecast.com/locations/Khanpur-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873345",
+    "weather": {}
+  },
+  {
+    "city": "Kharan",
+    "url": "https://www.weather-forecast.com/locations/Kharan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873350",
+    "weather": {}
+  },
+  {
+    "city": "Kharian",
+    "url": "https://www.weather-forecast.com/locations/Kharian/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873355",
+    "weather": {}
+  },
+  {
+    "city": "Khewra",
+    "url": "https://www.weather-forecast.com/locations/Khewra/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873360",
+    "weather": {}
+  },
+  {
+    "city": "Khurrianwala",
+    "url": "https://www.weather-forecast.com/locations/Khurrianwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873365",
+    "weather": {}
+  },
+  {
+    "city": "Khushab",
+    "url": "https://www.weather-forecast.com/locations/Khushab/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873370",
+    "weather": {}
+  },
+  {
+    "city": "Kohat",
+    "url": "https://www.weather-forecast.com/locations/Kohat/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873376",
+    "weather": {}
+  },
+  {
+    "city": "Kohlu",
+    "url": "https://www.weather-forecast.com/locations/Kohlu/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873381",
+    "weather": {}
+  },
+  {
+    "city": "Kohror Pakka",
+    "url": "https://www.weather-forecast.com/locations/Kohror-Pakka/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873386",
+    "weather": {}
+  },
+  {
+    "city": "Kot Addu",
+    "url": "https://www.weather-forecast.com/locations/Kot-Addu/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873392",
+    "weather": {}
+  },
+  {
+    "city": "Kot Diji",
+    "url": "https://www.weather-forecast.com/locations/Kot-Diji/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873398",
+    "weather": {}
+  },
+  {
+    "city": "Kot Ghulam Muhammad",
+    "url": "https://www.weather-forecast.com/locations/Kot-Ghulam-Muhammad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873403",
+    "weather": {}
+  },
+  {
+    "city": "Kot Malik",
+    "url": "https://www.weather-forecast.com/locations/Kot-Malik/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873409",
+    "weather": {}
+  },
+  {
+    "city": "Kot Mumin",
+    "url": "https://www.weather-forecast.com/locations/Kot-Mumin/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873415",
+    "weather": {}
+  },
+  {
+    "city": "Kot Radha Kishan",
+    "url": "https://www.weather-forecast.com/locations/Kot-Radha-Kishan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873421",
+    "weather": {}
+  },
+  {
+    "city": "Kot Samaba",
+    "url": "https://www.weather-forecast.com/locations/Kot-Samaba/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873426",
+    "weather": {}
+  },
+  {
+    "city": "Kotli",
+    "url": "https://www.weather-forecast.com/locations/Kotli/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873432",
+    "weather": {}
+  },
+  {
+    "city": "Kotli Loharan",
+    "url": "https://www.weather-forecast.com/locations/Kotli-Loharan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873437",
+    "weather": {}
+  },
+  {
+    "city": "Kotri",
+    "url": "https://www.weather-forecast.com/locations/Kotri/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873443",
+    "weather": {}
+  },
+  {
+    "city": "Kulachi",
+    "url": "https://www.weather-forecast.com/locations/Kulachi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873448",
+    "weather": {}
+  },
+  {
+    "city": "Kundian",
+    "url": "https://www.weather-forecast.com/locations/Kundian/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873453",
+    "weather": {}
+  },
+  {
+    "city": "Kunjah",
+    "url": "https://www.weather-forecast.com/locations/Kunjah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873458",
+    "weather": {}
+  },
+  {
+    "city": "Kunri",
+    "url": "https://www.weather-forecast.com/locations/Kunri/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873464",
+    "weather": {}
+  },
+  {
+    "city": "Lachi",
+    "url": "https://www.weather-forecast.com/locations/Lachi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873469",
+    "weather": {}
+  },
+  {
+    "city": "Ladhewala Waraich",
+    "url": "https://www.weather-forecast.com/locations/Ladhewala-Waraich/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873474",
+    "weather": {}
+  },
+  {
+    "city": "Lahore",
+    "url": "https://www.weather-forecast.com/locations/Lahore/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873479",
+    "weather": {}
+  },
+  {
+    "city": "Lakhi",
+    "url": "https://www.weather-forecast.com/locations/Lakhi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873484",
+    "weather": {}
+  },
+  {
+    "city": "Lakki Marwat",
+    "url": "https://www.weather-forecast.com/locations/Lakki-Marwat/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873490",
+    "weather": {}
+  },
+  {
+    "city": "Lalamusa",
+    "url": "https://www.weather-forecast.com/locations/Lala-Musa/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873495",
+    "weather": {}
+  },
+  {
+    "city": "Lalian",
+    "url": "https://www.weather-forecast.com/locations/Lalian/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873500",
+    "weather": {}
+  },
+  {
+    "city": "Lalian",
+    "url": "https://www.weather-forecast.com/locations/Lalian-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873506",
+    "weather": {}
+  },
+  {
+    "city": "Larkana",
+    "url": "https://www.weather-forecast.com/locations/Larkana/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873511",
+    "weather": {}
+  },
+  {
+    "city": "Leiah",
+    "url": "https://www.weather-forecast.com/locations/Leiah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873516",
+    "weather": {}
+  },
+  {
+    "city": "Lodhran",
+    "url": "https://www.weather-forecast.com/locations/Lodhran/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873522",
+    "weather": {}
+  },
+  {
+    "city": "Loralai",
+    "url": "https://www.weather-forecast.com/locations/Loralai/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873527",
+    "weather": {}
+  },
+  {
+    "city": "Mach",
+    "url": "https://www.weather-forecast.com/locations/Mach/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873532",
+    "weather": {}
+  },
+  {
+    "city": "Madeji",
+    "url": "https://www.weather-forecast.com/locations/Madeji/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873538",
+    "weather": {}
+  },
+  {
+    "city": "Mailsi",
+    "url": "https://www.weather-forecast.com/locations/Mailsi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873543",
+    "weather": {}
+  },
+  {
+    "city": "Malakwal",
+    "url": "https://www.weather-forecast.com/locations/Malakwal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873548",
+    "weather": {}
+  },
+  {
+    "city": "Malakwal City",
+    "url": "https://www.weather-forecast.com/locations/Malakwal-City/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873553",
+    "weather": {}
+  },
+  {
+    "city": "Mamu Kanjan",
+    "url": "https://www.weather-forecast.com/locations/Mamu-Kanjan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873558",
+    "weather": {}
+  },
+  {
+    "city": "Mananwala",
+    "url": "https://www.weather-forecast.com/locations/Mananwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873563",
+    "weather": {}
+  },
+  {
+    "city": "Mandi Bahauddin",
+    "url": "https://www.weather-forecast.com/locations/Mandi-Bahauddin/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873569",
+    "weather": {}
+  },
+  {
+    "city": "Mangla",
+    "url": "https://www.weather-forecast.com/locations/Mangla/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873574",
+    "weather": {}
+  },
+  {
+    "city": "Mankera",
+    "url": "https://www.weather-forecast.com/locations/Mankera/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873580",
+    "weather": {}
+  },
+  {
+    "city": "Mansehra",
+    "url": "https://www.weather-forecast.com/locations/Mansehra/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873586",
+    "weather": {}
+  },
+  {
+    "city": "Mardan",
+    "url": "https://www.weather-forecast.com/locations/Mardan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873591",
+    "weather": {}
+  },
+  {
+    "city": "Mastung",
+    "url": "https://www.weather-forecast.com/locations/Mastung/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873596",
+    "weather": {}
+  },
+  {
+    "city": "Matiari",
+    "url": "https://www.weather-forecast.com/locations/Matiari/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873601",
+    "weather": {}
+  },
+  {
+    "city": "Matli",
+    "url": "https://www.weather-forecast.com/locations/Matli/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873607",
+    "weather": {}
+  },
+  {
+    "city": "Mehar",
+    "url": "https://www.weather-forecast.com/locations/Mehar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873612",
+    "weather": {}
+  },
+  {
+    "city": "Mehrabpur",
+    "url": "https://www.weather-forecast.com/locations/Mehrabpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873617",
+    "weather": {}
+  },
+  {
+    "city": "Mian Channu",
+    "url": "https://www.weather-forecast.com/locations/Mian-Channun/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873622",
+    "weather": {}
+  },
+  {
+    "city": "Mianwali",
+    "url": "https://www.weather-forecast.com/locations/Mianwali/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873628",
+    "weather": {}
+  },
+  {
+    "city": "Minchinabad",
+    "url": "https://www.weather-forecast.com/locations/Minchinabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873633",
+    "weather": {}
+  },
+  {
+    "city": "Mingora",
+    "url": "https://www.weather-forecast.com/locations/Mangora/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873638",
+    "weather": {}
+  },
+  {
+    "city": "Miro Khan",
+    "url": "https://www.weather-forecast.com/locations/Miro-Khan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873644",
+    "weather": {}
+  },
+  {
+    "city": "Mirpur Khas",
+    "url": "https://www.weather-forecast.com/locations/Mirpur-Khas/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873649",
+    "weather": {}
+  },
+  {
+    "city": "Mirpur Mathelo",
+    "url": "https://www.weather-forecast.com/locations/Mirpur-Mathelo/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873654",
+    "weather": {}
+  },
+  {
+    "city": "Mirwah Gorchani",
+    "url": "https://www.weather-forecast.com/locations/Mirwah-Gorchani/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873659",
+    "weather": {}
+  },
+  {
+    "city": "Mitha Tiwana",
+    "url": "https://www.weather-forecast.com/locations/Mitha-Tiwana/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873665",
+    "weather": {}
+  },
+  {
+    "city": "Mithi",
+    "url": "https://www.weather-forecast.com/locations/Mithi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873670",
+    "weather": {}
+  },
+  {
+    "city": "Montgomery",
+    "url": "https://www.weather-forecast.com/locations/Sahiwal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873675",
+    "weather": {}
+  },
+  {
+    "city": "Moro",
+    "url": "https://www.weather-forecast.com/locations/Moro/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873681",
+    "weather": {}
+  },
+  {
+    "city": "Multan",
+    "url": "https://www.weather-forecast.com/locations/Multan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873686",
+    "weather": {}
+  },
+  {
+    "city": "Muridke",
+    "url": "https://www.weather-forecast.com/locations/Muridke-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873691",
+    "weather": {}
+  },
+  {
+    "city": "Murree",
+    "url": "https://www.weather-forecast.com/locations/Murree/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873697",
+    "weather": {}
+  },
+  {
+    "city": "Mustafabad",
+    "url": "https://www.weather-forecast.com/locations/Mustafabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873702",
+    "weather": {}
+  },
+  {
+    "city": "Muzaffarabad",
+    "url": "https://www.weather-forecast.com/locations/Muzaffarabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873707",
+    "weather": {}
+  },
+  {
+    "city": "Muzaffargarh",
+    "url": "https://www.weather-forecast.com/locations/Muzaffargharh/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873713",
+    "weather": {}
+  },
+  {
+    "city": "Nankana Sahib",
+    "url": "https://www.weather-forecast.com/locations/Nankana-Sahib/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873718",
+    "weather": {}
+  },
+  {
+    "city": "Narang Mandi",
+    "url": "https://www.weather-forecast.com/locations/Narang/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873723",
+    "weather": {}
+  },
+  {
+    "city": "Narowal",
+    "url": "https://www.weather-forecast.com/locations/Narowal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873728",
+    "weather": {}
+  },
+  {
+    "city": "Nasirabad",
+    "url": "https://www.weather-forecast.com/locations/Nasirabad-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873734",
+    "weather": {}
+  },
+  {
+    "city": "Naudero",
+    "url": "https://www.weather-forecast.com/locations/Naudero/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873739",
+    "weather": {}
+  },
+  {
+    "city": "Naukot",
+    "url": "https://www.weather-forecast.com/locations/Naukot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873744",
+    "weather": {}
+  },
+  {
+    "city": "Naushahra Virkan",
+    "url": "https://www.weather-forecast.com/locations/Naushahra-Virkan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873750",
+    "weather": {}
+  },
+  {
+    "city": "Naushahro Firoz",
+    "url": "https://www.weather-forecast.com/locations/Naushahro-Firoz/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873755",
+    "weather": {}
+  },
+  {
+    "city": "Nawabshah",
+    "url": "https://www.weather-forecast.com/locations/Nawabshah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873760",
+    "weather": {}
+  },
+  {
+    "city": "New Badah",
+    "url": "https://www.weather-forecast.com/locations/New-Badah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873766",
+    "weather": {}
+  },
+  {
+    "city": "Nowshera Cantonment",
+    "url": "https://www.weather-forecast.com/locations/Nowshera-Cantonment/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873771",
+    "weather": {}
+  },
+  {
+    "city": "Nushki",
+    "url": "https://www.weather-forecast.com/locations/Nushki/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873776",
+    "weather": {}
+  },
+  {
+    "city": "Okara",
+    "url": "https://www.weather-forecast.com/locations/Okara/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873781",
+    "weather": {}
+  },
+  {
+    "city": "Ormara",
+    "url": "https://www.weather-forecast.com/locations/Ormara/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873787",
+    "weather": {}
+  },
+  {
+    "city": "Pabbi",
+    "url": "https://www.weather-forecast.com/locations/Pabbi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873792",
+    "weather": {}
+  },
+  {
+    "city": "Pad Idan",
+    "url": "https://www.weather-forecast.com/locations/Pad-Idan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873797",
+    "weather": {}
+  },
+  {
+    "city": "Paharpur",
+    "url": "https://www.weather-forecast.com/locations/Paharpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873802",
+    "weather": {}
+  },
+  {
+    "city": "Pakpattan",
+    "url": "https://www.weather-forecast.com/locations/Pakpattan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873807",
+    "weather": {}
+  },
+  {
+    "city": "Pano Aqil",
+    "url": "https://www.weather-forecast.com/locations/Pano-Aqil/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873813",
+    "weather": {}
+  },
+  {
+    "city": "Pasni",
+    "url": "https://www.weather-forecast.com/locations/Pasni/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873818",
+    "weather": {}
+  },
+  {
+    "city": "Pasrur",
+    "url": "https://www.weather-forecast.com/locations/Pasrur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873823",
+    "weather": {}
+  },
+  {
+    "city": "Pattoki",
+    "url": "https://www.weather-forecast.com/locations/Pattoki/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873829",
+    "weather": {}
+  },
+  {
+    "city": "Peshawar",
+    "url": "https://www.weather-forecast.com/locations/Peshawar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873835",
+    "weather": {}
+  },
+  {
+    "city": "Phalia",
+    "url": "https://www.weather-forecast.com/locations/Phalia/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873840",
+    "weather": {}
+  },
+  {
+    "city": "Pind Dadan Khan",
+    "url": "https://www.weather-forecast.com/locations/Pind-Dadan-Khan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873845",
+    "weather": {}
+  },
+  {
+    "city": "Pindi Bhattian",
+    "url": "https://www.weather-forecast.com/locations/Pindi-Bhattian/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873850",
+    "weather": {}
+  },
+  {
+    "city": "Pindi Gheb",
+    "url": "https://www.weather-forecast.com/locations/Pindi-Gheb/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873855",
+    "weather": {}
+  },
+  {
+    "city": "Pir jo Goth",
+    "url": "https://www.weather-forecast.com/locations/Pir-jo-Goth/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873861",
+    "weather": {}
+  },
+  {
+    "city": "Pir Mahal",
+    "url": "https://www.weather-forecast.com/locations/Pir-Mahal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873866",
+    "weather": {}
+  },
+  {
+    "city": "Pishin",
+    "url": "https://www.weather-forecast.com/locations/Pishin/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873872",
+    "weather": {}
+  },
+  {
+    "city": "Qadirpur Ran",
+    "url": "https://www.weather-forecast.com/locations/Qadirpur-Ran/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873877",
+    "weather": {}
+  },
+  {
+    "city": "Qambar",
+    "url": "https://www.weather-forecast.com/locations/Kambar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873884",
+    "weather": {}
+  },
+  {
+    "city": "Quetta",
+    "url": "https://www.weather-forecast.com/locations/Quetta/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873889",
+    "weather": {}
+  },
+  {
+    "city": "Radhan",
+    "url": "https://www.weather-forecast.com/locations/Radhan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873894",
+    "weather": {}
+  },
+  {
+    "city": "Raiwind",
+    "url": "https://www.weather-forecast.com/locations/Raiwind/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873900",
+    "weather": {}
+  },
+  {
+    "city": "Raja Jang",
+    "url": "https://www.weather-forecast.com/locations/Raja-Jang/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873906",
+    "weather": {}
+  },
+  {
+    "city": "Rajanpur",
+    "url": "https://www.weather-forecast.com/locations/Rajanpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873911",
+    "weather": {}
+  },
+  {
+    "city": "Ranipur",
+    "url": "https://www.weather-forecast.com/locations/Ranipur-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873916",
+    "weather": {}
+  },
+  {
+    "city": "Rasulnagar",
+    "url": "https://www.weather-forecast.com/locations/Rasulnagar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873922",
+    "weather": {}
+  },
+  {
+    "city": "Ratodero",
+    "url": "https://www.weather-forecast.com/locations/Ratodero/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873927",
+    "weather": {}
+  },
+  {
+    "city": "Rawalpindi",
+    "url": "https://www.weather-forecast.com/locations/Rawalpindi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873932",
+    "weather": {}
+  },
+  {
+    "city": "Rawlakot",
+    "url": "https://www.weather-forecast.com/locations/Rawala-Kot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873937",
+    "weather": {}
+  },
+  {
+    "city": "Renala Khurd",
+    "url": "https://www.weather-forecast.com/locations/Renala-Khurd/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873943",
+    "weather": {}
+  },
+  {
+    "city": "Risālpur",
+    "url": "https://www.weather-forecast.com/locations/Risalpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873949",
+    "weather": {}
+  },
+  {
+    "city": "Rohri",
+    "url": "https://www.weather-forecast.com/locations/Rohri/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873955",
+    "weather": {}
+  },
+  {
+    "city": "Rojhan",
+    "url": "https://www.weather-forecast.com/locations/Rojhan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873960",
+    "weather": {}
+  },
+  {
+    "city": "Sadiqabad",
+    "url": "https://www.weather-forecast.com/locations/Sadiqabad-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873965",
+    "weather": {}
+  },
+  {
+    "city": "Sahiwal",
+    "url": "https://www.weather-forecast.com/locations/Sahiwal-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873970",
+    "weather": {}
+  },
+  {
+    "city": "Sakrand",
+    "url": "https://www.weather-forecast.com/locations/Sakrand/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873976",
+    "weather": {}
+  },
+  {
+    "city": "Sambrial",
+    "url": "https://www.weather-forecast.com/locations/Sambrial/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873981",
+    "weather": {}
+  },
+  {
+    "city": "Sanghar",
+    "url": "https://www.weather-forecast.com/locations/Sanghar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873986",
+    "weather": {}
+  },
+  {
+    "city": "Sangla",
+    "url": "https://www.weather-forecast.com/locations/Sangla/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873992",
+    "weather": {}
+  },
+  {
+    "city": "Sanjwal",
+    "url": "https://www.weather-forecast.com/locations/Sanjwal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.873997",
+    "weather": {}
+  },
+  {
+    "city": "Sarai Alamgir",
+    "url": "https://www.weather-forecast.com/locations/Sarai-Alamgir/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874003",
+    "weather": {}
+  },
+  {
+    "city": "Sarai Naurang",
+    "url": "https://www.weather-forecast.com/locations/Sarai-Naurang/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874008",
+    "weather": {}
+  },
+  {
+    "city": "Sarai Sidhu",
+    "url": "https://www.weather-forecast.com/locations/Sarai-Sidhu/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874013",
+    "weather": {}
+  },
+  {
+    "city": "Sargodha",
+    "url": "https://www.weather-forecast.com/locations/Sargodha-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874019",
+    "weather": {}
+  },
+  {
+    "city": "Sehwan",
+    "url": "https://www.weather-forecast.com/locations/Sehwan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874024",
+    "weather": {}
+  },
+  {
+    "city": "Setharja Old",
+    "url": "https://www.weather-forecast.com/locations/Setharja-Old/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874029",
+    "weather": {}
+  },
+  {
+    "city": "Shabqadar",
+    "url": "https://www.weather-forecast.com/locations/Shabqadar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874034",
+    "weather": {}
+  },
+  {
+    "city": "Shahdadkot",
+    "url": "https://www.weather-forecast.com/locations/Shahdadkot/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874040",
+    "weather": {}
+  },
+  {
+    "city": "Shahdadpur",
+    "url": "https://www.weather-forecast.com/locations/Shahdadpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874045",
+    "weather": {}
+  },
+  {
+    "city": "Shahpur",
+    "url": "https://www.weather-forecast.com/locations/Shahpur-7/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874050",
+    "weather": {}
+  },
+  {
+    "city": "Shahpur Chakar",
+    "url": "https://www.weather-forecast.com/locations/Shahpur-Chakar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874055",
+    "weather": {}
+  },
+  {
+    "city": "Shahr Sultan",
+    "url": "https://www.weather-forecast.com/locations/Shahr-Sultan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874061",
+    "weather": {}
+  },
+  {
+    "city": "Shakargarr",
+    "url": "https://www.weather-forecast.com/locations/Shakargarr/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874070",
+    "weather": {}
+  },
+  {
+    "city": "Sharqpur",
+    "url": "https://www.weather-forecast.com/locations/Sharqpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874075",
+    "weather": {}
+  },
+  {
+    "city": "Sheikhu Pura",
+    "url": "https://www.weather-forecast.com/locations/Sheikhu-Pura/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874080",
+    "weather": {}
+  },
+  {
+    "city": "Shikarpur",
+    "url": "https://www.weather-forecast.com/locations/Shikarpur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874086",
+    "weather": {}
+  },
+  {
+    "city": "Shorko",
+    "url": "https://www.weather-forecast.com/locations/Shorko/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874091",
+    "weather": {}
+  },
+  {
+    "city": "Shujaabad",
+    "url": "https://www.weather-forecast.com/locations/Shujaabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874096",
+    "weather": {}
+  },
+  {
+    "city": "Siālkot",
+    "url": "https://www.weather-forecast.com/locations/Sialkote/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874102",
+    "weather": {}
+  },
+  {
+    "city": "Sibi",
+    "url": "https://www.weather-forecast.com/locations/Sibi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874107",
+    "weather": {}
+  },
+  {
+    "city": "Sillanwali",
+    "url": "https://www.weather-forecast.com/locations/Sillanwali/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874112",
+    "weather": {}
+  },
+  {
+    "city": "Sinjhoro",
+    "url": "https://www.weather-forecast.com/locations/Sinjhoro/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874118",
+    "weather": {}
+  },
+  {
+    "city": "Sita Road",
+    "url": "https://www.weather-forecast.com/locations/Sita-Road/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874123",
+    "weather": {}
+  },
+  {
+    "city": "Sobhadero",
+    "url": "https://www.weather-forecast.com/locations/Sobhadero/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874128",
+    "weather": {}
+  },
+  {
+    "city": "Sodhra",
+    "url": "https://www.weather-forecast.com/locations/Sodhra/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874133",
+    "weather": {}
+  },
+  {
+    "city": "Sukheke Mandi",
+    "url": "https://www.weather-forecast.com/locations/Sukheke-Mandi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874138",
+    "weather": {}
+  },
+  {
+    "city": "Sukkur",
+    "url": "https://www.weather-forecast.com/locations/Sukkur/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874525",
+    "weather": {}
+  },
+  {
+    "city": "Surab",
+    "url": "https://www.weather-forecast.com/locations/Surab/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874546",
+    "weather": {}
+  },
+  {
+    "city": "Swabi",
+    "url": "https://www.weather-forecast.com/locations/Swabi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874555",
+    "weather": {}
+  },
+  {
+    "city": "Tal",
+    "url": "https://www.weather-forecast.com/locations/Tal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874561",
+    "weather": {}
+  },
+  {
+    "city": "Talagang",
+    "url": "https://www.weather-forecast.com/locations/Talagang/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874567",
+    "weather": {}
+  },
+  {
+    "city": "Talamba",
+    "url": "https://www.weather-forecast.com/locations/Talamba/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874573",
+    "weather": {}
+  },
+  {
+    "city": "Talhar",
+    "url": "https://www.weather-forecast.com/locations/Talhar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874578",
+    "weather": {}
+  },
+  {
+    "city": "Tandlianwala",
+    "url": "https://www.weather-forecast.com/locations/Tandlianwala/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874584",
+    "weather": {}
+  },
+  {
+    "city": "Tando Adam",
+    "url": "https://www.weather-forecast.com/locations/Tando-Adam/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874589",
+    "weather": {}
+  },
+  {
+    "city": "Tando Allahyar",
+    "url": "https://www.weather-forecast.com/locations/Tando-Allahyar/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874594",
+    "weather": {}
+  },
+  {
+    "city": "Tando Bago",
+    "url": "https://www.weather-forecast.com/locations/Tando-Bago/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874600",
+    "weather": {}
+  },
+  {
+    "city": "Tando Ghulam Ali",
+    "url": "https://www.weather-forecast.com/locations/Tando-Ghulam-Ali/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874605",
+    "weather": {}
+  },
+  {
+    "city": "Tando Jam",
+    "url": "https://www.weather-forecast.com/locations/Tando-Jam/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874611",
+    "weather": {}
+  },
+  {
+    "city": "Tando Muhammad Khan",
+    "url": "https://www.weather-forecast.com/locations/Tando-Muhammad-Khan/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874616",
+    "weather": {}
+  },
+  {
+    "city": "Tangi",
+    "url": "https://www.weather-forecast.com/locations/Tangi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874621",
+    "weather": {}
+  },
+  {
+    "city": "Tank",
+    "url": "https://www.weather-forecast.com/locations/Tank/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874627",
+    "weather": {}
+  },
+  {
+    "city": "Taunsa",
+    "url": "https://www.weather-forecast.com/locations/Taunsa/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874632",
+    "weather": {}
+  },
+  {
+    "city": "Tharu Shah",
+    "url": "https://www.weather-forecast.com/locations/Tharu-Shah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874638",
+    "weather": {}
+  },
+  {
+    "city": "Thatta",
+    "url": "https://www.weather-forecast.com/locations/Thatta/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874649",
+    "weather": {}
+  },
+  {
+    "city": "Thul",
+    "url": "https://www.weather-forecast.com/locations/Thul/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874655",
+    "weather": {}
+  },
+  {
+    "city": "Toba Tek Singh",
+    "url": "https://www.weather-forecast.com/locations/Toba-Tek-Singh/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874660",
+    "weather": {}
+  },
+  {
+    "city": "Topi",
+    "url": "https://www.weather-forecast.com/locations/Topi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874665",
+    "weather": {}
+  },
+  {
+    "city": "Turbat",
+    "url": "https://www.weather-forecast.com/locations/Turbat/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874671",
+    "weather": {}
+  },
+  {
+    "city": "Ubauro",
+    "url": "https://www.weather-forecast.com/locations/Ubauro/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874676",
+    "weather": {}
+  },
+  {
+    "city": "Umarkot",
+    "url": "https://www.weather-forecast.com/locations/Umarkot-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874682",
+    "weather": {}
+  },
+  {
+    "city": "Usta Muhammad",
+    "url": "https://www.weather-forecast.com/locations/Usta-Muhammad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874687",
+    "weather": {}
+  },
+  {
+    "city": "Uthal",
+    "url": "https://www.weather-forecast.com/locations/Uthal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874692",
+    "weather": {}
+  },
+  {
+    "city": "Utmanzai",
+    "url": "https://www.weather-forecast.com/locations/Utmanzai/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874697",
+    "weather": {}
+  },
+  {
+    "city": "Vehari",
+    "url": "https://www.weather-forecast.com/locations/Vihari/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874703",
+    "weather": {}
+  },
+  {
+    "city": "Warah",
+    "url": "https://www.weather-forecast.com/locations/Warah/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874708",
+    "weather": {}
+  },
+  {
+    "city": "Warburton",
+    "url": "https://www.weather-forecast.com/locations/Warburton-1/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874713",
+    "weather": {}
+  },
+  {
+    "city": "Wazirabad",
+    "url": "https://www.weather-forecast.com/locations/Wazirabad/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874719",
+    "weather": {}
+  },
+  {
+    "city": "Yazman",
+    "url": "https://www.weather-forecast.com/locations/Yazman-Mandi/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874724",
+    "weather": {}
+  },
+  {
+    "city": "Zafarwal",
+    "url": "https://www.weather-forecast.com/locations/Zafarwal/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874729",
+    "weather": {}
+  },
+  {
+    "city": "Zahir Pir",
+    "url": "https://www.weather-forecast.com/locations/Zahir-Pir/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874734",
+    "weather": {}
+  },
+  {
+    "city": "Zaida",
+    "url": "https://www.weather-forecast.com/locations/Zaida/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874740",
+    "weather": {}
+  },
+  {
+    "city": "Zhob",
+    "url": "https://www.weather-forecast.com/locations/Zhob/forecasts/latest",
+    "scraped_at": "2025-11-28T23:33:31.874745",
+    "weather": {}
+  }
+]

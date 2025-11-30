@@ -23,6 +23,8 @@ from sqlalchemy.orm import Session
 # Import your database models and session
 from app.core.db import SessionLocal
 from app.modules.weather.models import Country as CountryModel, City as CityModel
+# Import User model to ensure relationships are properly registered and avoid InvalidRequestError
+from app.modules.auth.models import User as UserModel
 
 
 def wait_for_element_with_retry(page, xpath: str, retries: int = 5, wait_time: int = 3000):
@@ -491,7 +493,10 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
     snapshot_enabled = True
     snapshot_data = []
     snapshot_file_path = None
-    snapshot_success = False
+    
+    # Track failed countries
+    failed_countries = []
+    failed_file_path = None
     
     # Define snapshot directory and file path using pathlib
     from pathlib import Path
@@ -503,15 +508,57 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
     
     # Generate filename with current date
     current_date = datetime.now().strftime("%Y-%m-%d")
-    
-    # Check if snapshot for today already exists and delete it
-    existing_snapshots = list(snapshot_dir.glob(f"{current_date}*"))
-    for existing_path in existing_snapshots:
-        print(f"Removing existing snapshot: {existing_path}")
-        existing_path.unlink()
-    
-    # Create new snapshot file path
     snapshot_file_path = snapshot_dir / f"{current_date}_countries_cities.json"
+    failed_file_path = snapshot_dir / f"{current_date}_failed_countries.json"
+    
+    print(f"\n{'='*60}")
+    print(f"SCRAPER INITIALIZATION ({current_date})")
+    print(f"{'='*60}\n")
+    
+    # ---------------------------------------------------------
+    # SMART RESUME LOGIC
+    # ---------------------------------------------------------
+    scraped_country_names = set()
+    previously_failed_countries = []
+    
+    # 1. Load existing successful scrapes
+    if snapshot_file_path.exists():
+        print(f"Found existing snapshot: {snapshot_file_path}")
+        try:
+            with open(snapshot_file_path, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+                snapshot_data = existing_data
+                # STRICT RESUME: Only consider a country "scraped" if it has cities
+                scraped_country_names = {
+                    item["country"] 
+                    for item in existing_data 
+                    if item.get("cities") and len(item["cities"]) > 0
+                }
+            print(f"✓ Loaded {len(scraped_country_names)} already completed countries (with cities).")
+            
+            # Identify countries in snapshot but without cities (failed city scraping)
+            partial_countries = {item["country"] for item in existing_data} - scraped_country_names
+            if partial_countries:
+                print(f"⚠ Found {len(partial_countries)} countries with missing cities. Will re-scrape them.")
+                
+        except Exception as e:
+            print(f"⚠ Error reading existing snapshot: {e}")
+            print("  Starting with empty snapshot data.")
+            snapshot_data = []
+    else:
+        print("No existing snapshot for today. Starting fresh.")
+        
+    # 2. Load existing failed scrapes (to update/remove later)
+    if failed_file_path.exists():
+        try:
+            with open(failed_file_path, 'r', encoding='utf-8') as f:
+                previously_failed_countries = json.load(f)
+            print(f"Found {len(previously_failed_countries)} previously failed countries.")
+            # Initialize current failed list with previous failures (we'll remove successes as we go)
+            failed_countries = previously_failed_countries.copy()
+        except Exception as e:
+            print(f"⚠ Error reading failed countries file: {e}")
+    
     print(f"Snapshots enabled. Will save to: {snapshot_file_path}\n")
     
     if db_store:
@@ -520,10 +567,7 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
         print("Database storage disabled (default behavior). Use --db-store to enable.\n")
     
     # Determine headless mode (default: True, unless --dry-run is specified)
-    
-    print(f"\n{'='*60}")
-    print(f"Starting scraper in {'HEADLESS' if headless else 'HEADED'} mode")
-    print(f"{'='*60}\n")
+    print(f"Starting scraper in {'HEADLESS' if headless else 'HEADED'} mode\n")
     
     with sync_playwright() as p:
         # Launch browser function
@@ -540,46 +584,57 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
         browser, context, page = launch_browser()
         
         try:
-            # PHASE 1: Scrape countries
+            # PHASE 1: Scrape ALL countries (to know what the total work is)
+            # We always need the full list to know what's missing
             try:
-                countries_data = scrape_countries(page)
+                all_countries_data = scrape_countries(page)
             except Exception as e:
                 print(f"Error during country scraping: {e}")
                 # Try one restart for countries
                 print("Restarting browser and retrying countries scraping...")
                 browser.close()
                 browser, context, page = launch_browser()
-                countries_data = scrape_countries(page)
+                all_countries_data = scrape_countries(page)
             
-            if not countries_data:
+            if not all_countries_data:
                 print("\n⚠ No countries data scraped. Exiting.")
                 sys.exit(1)
             
             # Upsert countries to database and get country IDs (only if DB store enabled)
             country_name_to_id = {}
             if db_store:
-                country_name_to_id = upsert_countries_to_db(countries_data)
+                country_name_to_id = upsert_countries_to_db(all_countries_data)
             
-            # Initialize snapshot data if enabled
-            if snapshot_enabled:
-                for country in countries_data:
+            # Initialize snapshot data structure for NEW countries
+            # We don't overwrite existing snapshot_data, we append to it
+            existing_names = {item["country"] for item in snapshot_data}
+            for country in all_countries_data:
+                if country["name"] not in existing_names:
                     snapshot_data.append({
                         "country": country["name"],
                         "url": country["url"],
                         "cities": []
                     })
             
-            # PHASE 2: Scrape cities for each country
+            # PHASE 2: Scrape cities for REMAINING countries
             print(f"\n{'='*60}")
-            print("PHASE 2: SCRAPING CITIES FOR EACH COUNTRY")
+            print("PHASE 2: SCRAPING CITIES")
             print(f"{'='*60}\n")
             
-            # Apply limit if specified
-            countries_to_process = countries_data[:limit] if limit else countries_data
-            total_countries = len(countries_to_process)
+            # Filter: Only process countries that are NOT in scraped_country_names
+            countries_to_process = [c for c in all_countries_data if c["name"] not in scraped_country_names]
             
+            print(f"Total Countries Found: {len(all_countries_data)}")
+            print(f"Already Completed:     {len(scraped_country_names)}")
+            print(f"Remaining to Process:  {len(countries_to_process)}")
+            print(f"{'-'*60}\n")
+
+            # Apply limit if specified
             if limit:
+                countries_to_process = countries_to_process[:limit]
                 print(f"⚠ Processing limited to {limit} countries (testing mode)\n")
+            
+            total_countries = len(countries_to_process)
             
             for country_index, country in enumerate(countries_to_process, 1):
                 country_name = country["name"]
@@ -603,6 +658,8 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
                 
                 # Scrape cities for this country with retry logic
                 max_retries = 2
+                country_success = False
+                
                 for attempt in range(max_retries):
                     try:
                         cities_data = scrape_cities_for_country(page, country_url, country_name)
@@ -630,6 +687,7 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
                             print(f"  ⚠ No cities found for {country_name}")
                         
                         # Break retry loop if successful
+                        country_success = True
                         break
                         
                     except Exception as e:
@@ -648,43 +706,66 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
                         if attempt == max_retries - 1:
                             print(f"  ✗ Failed to process {country_name} after {max_retries} attempts")
                 
+                # Update Failed List Logic
+                if not country_success:
+                    # Add to failed list if not already there
+                    if not any(fc["name"] == country_name for fc in failed_countries):
+                        failed_countries.append(country)
+                        print(f"  → Added {country_name} to failed list.")
+                else:
+                    # Remove from failed list if it was there (it succeeded now!)
+                    failed_countries = [fc for fc in failed_countries if fc["name"] != country_name]
+                    # print(f"  → Removed {country_name} from failed list (Success).")
+
+                # Save failed list incrementally
+                try:
+                    if failed_countries:
+                        with open(failed_file_path, 'w', encoding='utf-8') as f:
+                            json.dump(failed_countries, f, indent=2, ensure_ascii=False)
+                    elif failed_file_path.exists():
+                        # If list is empty but file exists, delete file (all fixed!)
+                        failed_file_path.unlink()
+                except Exception as e:
+                    print(f"  ⚠ Warning: Failed to update failed countries file: {e}")
+
                 # Delay between countries to mimic human behavior
                 if country_index < total_countries:
                     print(f"\n  → Waiting before next country...")
                     time.sleep(random.uniform(4, 7))
             
             print(f"\n{'='*60}")
-            print("✓ Script completed successfully!")
+            print("✓ Script completed!")
             print(f"{'='*60}\n")
-            
-            # Mark snapshot as successful
-            snapshot_success = True
             
         except Exception as e:
             print(f"\nERROR during execution: {e}")
             import traceback
             traceback.print_exc()
-            snapshot_success = False
             sys.exit(1)
         
         finally:
-            # Save snapshot if enabled and successful
-            if snapshot_enabled and snapshot_success and snapshot_file_path:
+            # Final Save of Snapshot
+            if snapshot_enabled and snapshot_file_path:
                 try:
                     with open(snapshot_file_path, 'w', encoding='utf-8') as f:
                         json.dump(snapshot_data, f, indent=2, ensure_ascii=False)
-                    print(f"✓ Snapshot saved successfully: {snapshot_file_path}\n")
+                    print(f"✓ Final snapshot saved: {snapshot_file_path}\n")
                 except Exception as e:
-                    print(f"⚠ Failed to save snapshot: {e}\n")
-            elif snapshot_enabled and not snapshot_success and snapshot_file_path:
-                # Delete snapshot file if script failed
-                if snapshot_file_path.exists():
-                    try:
-                        snapshot_file_path.unlink()
-                        print(f"⚠ Snapshot deleted due to script failure: {snapshot_file_path}\n")
-                    except Exception as e:
-                        print(f"⚠ Failed to delete snapshot: {e}\n")
+                    print(f"⚠ Failed to save final snapshot: {e}\n")
             
+            # Final Save of Failed Countries
+            if failed_countries:
+                try:
+                    with open(failed_file_path, 'w', encoding='utf-8') as f:
+                        json.dump(failed_countries, f, indent=2, ensure_ascii=False)
+                    print(f"⚠ {len(failed_countries)} countries failed. Saved to: {failed_file_path}")
+                except Exception as e:
+                    print(f"⚠ Failed to save failed countries list: {e}")
+            elif failed_file_path and failed_file_path.exists():
+                 # Clean up if empty
+                 failed_file_path.unlink()
+                 print("✓ All failures resolved. Deleted failed countries file.")
+
             # Close browser
             print("Closing browser...")
             try:
