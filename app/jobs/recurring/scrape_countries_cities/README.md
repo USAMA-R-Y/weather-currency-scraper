@@ -8,19 +8,19 @@ Scrapes country and city data from weather-forecast.com and stores it in the dat
 
 ```bash
 # Run in headless mode (default: stores snapshots only)
-python -m app.jobs.recurring.scrape_countries_cities.scraper
+python -m app.jobs.recurring.scrape_countries_cities.scrape_countries_cities
 
 # Run with browser visible (for debugging)
-python -m app.jobs.recurring.scrape_countries_cities.scraper --dry-run
+python -m app.jobs.recurring.scrape_countries_cities.scrape_countries_cities --dry-run
 
 # Limit to first N countries (for testing)
-python -m app.jobs.recurring.scrape_countries_cities.scraper --limit 5
+python -m app.jobs.recurring.scrape_countries_cities.scrape_countries_cities --limit 5
 
 # Store data in database AND snapshots
-python -m app.jobs.recurring.scrape_countries_cities.scraper --db-store
+python -m app.jobs.recurring.scrape_countries_cities.scrape_countries_cities --db-store
 
 # Combine options
-python -m app.jobs.recurring.scrape_countries_cities.scraper --dry-run --limit 10 --db-store
+python -m app.jobs.recurring.scrape_countries_cities.scrape_countries_cities --dry-run --limit 10 --db-store
 ```
 
 ### Programmatic Usage
