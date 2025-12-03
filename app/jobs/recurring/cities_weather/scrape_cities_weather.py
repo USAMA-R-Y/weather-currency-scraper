@@ -104,8 +104,16 @@ def get_cities_from_snapshot(country_name: str) -> List[Dict[str, str]]:
     cities_data = []
     
     try:
-        project_root = get_project_root()
-        snapshot_dir = project_root / "data" / "snapshots" / "scrape_countries_cities"
+        # project_root = get_project_root()
+        # snapshot_dir = project_root / "data" / "snapshots" / "scrape_countries_cities"
+        
+        # New path: relative to this script, but we need to point to the scrape_countries_cities data folder
+        # Assuming this script is in app/jobs/recurring/cities_weather/
+        # and the data is in app/jobs/recurring/scrape_countries_cities/data/
+        
+        current_dir = Path(__file__).resolve().parent
+        # Go up one level to 'recurring', then into 'scrape_countries_cities', then 'data'
+        snapshot_dir = current_dir.parent / "scrape_countries_cities" / "data"
         
         if not snapshot_dir.exists():
             print(f"  ⚠ Snapshot directory not found: {snapshot_dir}")
@@ -266,7 +274,10 @@ def scrape_cities_weather_main(headless: bool = True, limit: Optional[int] = Non
     
     # Create snapshot directory with datetime
     project_root = get_project_root()
-    base_snapshot_dir = project_root / "data" / "snapshots" / "scrape_cities_weather"
+    # base_snapshot_dir = project_root / "data" / "snapshots" / "scrape_cities_weather"
+    
+    # New path: current directory / data
+    base_snapshot_dir = Path(__file__).resolve().parent / "data"
     base_snapshot_dir.mkdir(parents=True, exist_ok=True)
     
     # Generate directory name with current datetime
