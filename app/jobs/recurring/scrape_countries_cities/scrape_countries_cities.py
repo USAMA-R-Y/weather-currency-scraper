@@ -503,7 +503,9 @@ def scrape_countries_cities_main(headless: bool = True, limit: Optional[int] = N
     
     # Get project root (4 levels up from this script)
     project_root = Path(__file__).resolve().parent.parent.parent.parent
-    snapshot_dir = project_root / "data" / "snapshots" / "scrape_countries_cities"
+    # snapshot_dir = project_root / "data" / "snapshots" / "scrape_countries_cities"
+    # New path: current directory / data
+    snapshot_dir = Path(__file__).resolve().parent / "data"
     snapshot_dir.mkdir(parents=True, exist_ok=True)
     
     # Generate filename with current date
