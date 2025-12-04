@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  weather-tracker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: automated-weather-tracker
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist database and logs
+      - ./data:/app/data
+      # Mount .env file for configuration
+      - ./.env:/app/.env
+    environment:
+      - DATABASE_URL=sqlite:///./data/weather_tracker.db
+      - TASK_TIMEZONE=UTC
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
