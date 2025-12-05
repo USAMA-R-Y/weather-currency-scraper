@@ -1,61 +1,47 @@
-# Use Python 3.11 slim image as base
-FROM python:3.11-slim
-
-# Set working directory
-WORKDIR /app
+# Use a Python image with uv pre-installed
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    PIP_NO_CACHE_DIR=1 \
-    PIP_DISABLE_PIP_VERSION_CHECK=1
+    # uv config
+    UV_COMPILE_BYTECODE=1 \
+    UV_LINK_MODE=copy \
+    # Playwright config
+    PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 
-# Install system dependencies required for Playwright and other packages
+WORKDIR /app
+
+# Install system dependencies required for Playwright
+# We do this first to leverage layer caching
 RUN apt-get update && apt-get install -y \
-    wget \
-    gnupg \
-    ca-certificates \
-    fonts-liberation \
-    libasound2 \
-    libatk-bridge2.0-0 \
-    libatk1.0-0 \
-    libatspi2.0-0 \
-    libcups2 \
-    libdbus-1-3 \
-    libdrm2 \
-    libgbm1 \
-    libgtk-3-0 \
-    libnspr4 \
-    libnss3 \
-    libwayland-client0 \
-    libxcomposite0 \
-    libxdamage1 \
-    libxfixes3 \
-    libxkbcommon0 \
-    libxrandr2 \
-    xdg-utils \
-    git \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install uv for faster dependency management
-RUN pip install uv
-
-# Copy dependency files
+# Install dependencies
+# We copy only what's needed for installation first
 COPY pyproject.toml uv.lock ./
 COPY requirements.txt ./
 
-# Install Python dependencies using uv
-RUN uv sync --frozen
+# Install project dependencies
+# --mount=type=cache allows sharing the UV cache across builds
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --frozen --no-install-project --no-dev
 
-# Install Playwright browsers
-RUN uv run playwright install chromium
-RUN uv run playwright install-deps chromium
+# Install Playwright browsers and dependencies
+# We install dependencies for chromium only to keep image size down
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv run playwright install chromium --with-deps
 
 # Copy application code
 COPY . .
 
+# Install the project itself (if applicable, otherwise this just ensures the environment is ready)
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --frozen --no-dev
+
 # Create necessary directories
-RUN mkdir -p data/logs
+RUN mkdir -p data/logs data/snapshots
 
 # Expose port
 EXPOSE 8000
