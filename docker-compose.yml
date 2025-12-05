@@ -11,13 +11,16 @@ services:
     volumes:
       # Persist database and logs
       - ./data:/app/data
-      # Mount .env file for configuration
+      # Mount .env file for configuration (if exists)
       - ./.env:/app/.env
+    env_file:
+      - .env
     environment:
       - DATABASE_URL=sqlite:///./data/weather_tracker.db
       - TASK_TIMEZONE=UTC
     restart: unless-stopped
     healthcheck:
+      # Using curl which we explicitly installed in the Dockerfile
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s
       timeout: 10s
